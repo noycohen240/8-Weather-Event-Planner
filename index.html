@@ -6,6 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <style>
+        .weather_forecast {
+            display: flex;
+            display: inline-block;
+            flex-direction: column;
+            align-items: center;
+            border: 1.5px solid;
+            border-radius: 3px;
+            width: 70%;
+            margin-left: 310px;
+        }
+
+        .weather_forecast h1 {
+            text-align: center;
+        }
+
+        .sunday,
+        .monday,
+        .tuesday,
+        .wednesday,
+        .thursday,
+        .friday,
+        .saturday {
+            display: flex;
+            flex-direction: row-reverse;
+            list-style: none;
+            border: 1.5px solid;
+            border-radius: 3px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            margin-right: 40px;
+            justify-content: space-between;
+        }
+
+        .monday_forecast {
+            margin-right: 35px;
+        }
+
+        .tuesday_forecast {
+            margin-right: 20px;
+        }
+
+        .wednesday_forecast {
+            margin-right: 10px;
+        }
+
+        .thursday_forecast {
+            margin-right: 5px;
+        }
+
+        .friday_forecast {
+            margin-right: 10px;
+        }
+
+        .saturday_forecast {
+            margin-right: 15px;
+        }
+
+        .more_information {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            border: 1.5px solid;
+            border-radius: 3px;
+            padding: 3px;
+            width: 15%;
+        }
+
+        .about_us_sec,
+        .recommended_activities {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            border: 1.5px solid;
+            border-radius: 3px;
+            padding: 15px;
+        }
+        
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
@@ -43,47 +122,89 @@
         </div>
     </div>
 
-    <hr>
-
     <div class="weather_forecast">
         <h1 class="forecast_title">תחזית מזג אוויר שבועית</h1>
         <ol>
             <li class="sunday">
-                <div class="sunday_forecast">Sunday <span class="material-symbols-outlined">
-                    clear_day
-                </span> Sunny Day 25°-27°</div>
+                <div class="days">יום ראשון</div>
+                <div class="sunday_forecast">
+                    <span class="material-symbols-outlined">
+                        clear_day
+                    </span>
+                </div>
+                <div class="type_day">שימשי</div>
+                <div class="temp"> 25°-27°</div>
             </li>
             <li class="monday">
-                <div class="monday_forecast">Monday <span class="material-symbols-outlined">
-                    partly_cloudy_day
-                </span> Partly Day 23°-26°</div>
+                <div class="days">יום שני</div>
+                <div class="monday_forecast">
+                    <span class="material-symbols-outlined">
+                        partly_cloudy_day
+                    </span>
+                </div>
+                <div class="type_day">מעונן חלקית</div>
+                <div class="temp">23°-26°</div>
             </li>
             <li class="tuesday">
-                <div>Tuesday <span class="material-symbols-outlined">
-                    partly_cloudy_day
-                    </span> Partly Day 21°-24°</div>
+                <div class="days">יום שלישי</div>
+                <div class="tuesday_forecast"><span class="material-symbols-outlined">
+                        partly_cloudy_day
+                    </span></div>
+                <div class="type_day">מעונן חלקית</div>
+                <div class="temp">21°-24°</div>
             </li>
-            <li class="wednesday"><div>Wednesday <span class="material-symbols-outlined">
+            <li class="wednesday">
+                <div class="days">יום רביעי</div>
+                <div class="wednesday_forecast"><span class="material-symbols-outlined">
                         cloud
-                    </span> Cloudy Day 17°-22°</div>
-                </li>
-            <li class="thursday"><div>Thursday <span class="material-symbols-outlined">
+                    </span></div>
+                <div class="type_day">מעונן</div>
+                <div class="temp">17°-22°</div>
+            </li>
+            <li class="thursday">
+                <div class="days">יום חמישי</div>
+                <div class="thursday_forecast"><span class="material-symbols-outlined">
                         rainy
-                    </span> Rainy Day 14°-18°</div>
-                </li>
-            <li class="friday"><div>Friday <span class="material-symbols-outlined">
+                    </span></div>
+                <div class="type_day">גשום</div>
+                <div class="temp"> 14°-18°</div>
+            </li>
+            <li class="friday">
+                <div class="days">יום שישי</div>
+                <div class="friday_forecast"><span class="material-symbols-outlined">
                         rainy
-                    </span> Rainy Day 13°-16°</div>
-                </li>
-            <li class="saturday"><div>Saturday <span class="material-symbols-outlined">
+                    </span></div>
+                <div class="type_day">גשום</div>
+                <div class="temp">13°-16°</div>
+            </li>
+            <li class="saturday">
+                <div class="days">יום שבת</div>
+                <div class="saturday_forecast"><span class="material-symbols-outlined">
                         cloud
-                    </span> Cloudy Day 16°-20°</div>
-                </li>
+                    </span></div>
+                <div class="type_day">מעונן</div>
+                <div class="temp">16°-20°</div>
+            </li>
         </ol>
     </div>
 
+    <div class="more_information">
+        <div class="about_us_sec">
+            <h2>קצת עלינו </h2>
+            <p>אנחנו סטודנטים להנדסה תעשייה וניהול בשנה השלישית ללימודים </p>
+            <div><a href="">להמשך קריאה</a></div>
+        </div>
+        <div class="recommended_activities">
+            <h2>רשימת פעילויות מומלצות</h2>
+            <ul>
+                <li>קטיף תותים ופרחים</li>
+                <li>רכיבה על סוסים</li>
+                <li>הסתובבות במרכז הקניות</li>
+            </ul>
+            <div><a href="">להמשך קריאה</a></div>
+        </div>
+    </div>
 
-    <hr>
     <div class="last_menu">
         <div class="the_last_list">
             <h3 class="end_title">עוד באתר</h3>
@@ -96,6 +217,10 @@
             </ul>
         </div>
     </div>
+
+    <footer>
+        <small>&copy;Any Weather</small>
+    </footer>
 
     <script src="script.js"></script>
 </body>
