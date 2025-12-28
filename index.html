@@ -21,15 +21,16 @@
             padding: 20px;
         }
 
-        .logo_menu{
+        .logo_menu {
             display: flex;
             align-items: center;
             gap: 30px;
         }
 
-        .menu_list{
+        .menu_list {
             display: flex;
-            gap: 30px;
+            flex-direction: row-reverse;
+            gap: 60px;
             list-style: none;
         }
 
@@ -37,24 +38,47 @@
             text-decoration: none;
         }
 
-        .logo{
+        #home,
+        #about_us,
+        #contact_us,
+        #activities,
+        #support_accessibility {
+            border: solid 1.5px;
+            border-radius: 3px;
+            padding: 10px;
+        }
+
+        .logo {
             height: 90px;
+            margin-left: 250px;
             width: auto;
         }
 
-        .hamburger{
+        .hamburger {
             display: none;
             font-size: 30px;
         }
 
         .moto {
-            width: 100%;
+            width: 90%;
             overflow: hidden;
             background-color: #fff9c4;
             border: solid #ffecb3;
             border-radius: 3px;
             padding: 10px;
+            margin: 40px;
+            margin-top: 20px;
             position: relative;
+        }
+
+        @keyframes slide {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(100%);
+            }
         }
 
         .our_moto {
@@ -62,6 +86,33 @@
             font-size: 18px;
             font-weight: bold;
             animation: slide 12s linear infinite;
+        }
+
+        .last_menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3px;
+            border: solid 2px;
+            margin: 40px;
+            margin-right: 60px;
+        }
+
+        .end_title{
+            margin-left: 45px;
+        }
+
+        .last_menu_list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .last_menu_list a{
+            text-decoration: none;
         }
     </style>
     <link rel="stylesheet"
@@ -73,11 +124,11 @@
         <div class="logo_menu">
             <nav class="menu">
                 <ul class="menu_list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="">Activities</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Support & Accessibility</a></li>
+                    <li id="home"><a href="index.html">Home</a></li>
+                    <li id="activities"><a href="">Activities</a></li>
+                    <li id="about_us"><a href="">About Us</a></li>
+                    <li id="contact_us"><a href="./feature-form/from.html">Contact Us</a></li>
+                    <li id="support_accessibility"><a href="">Support & Accessibility</a></li>
                 </ul>
             </nav>
 
@@ -98,6 +149,35 @@
         </div>
     </div>
 
+    <hr>
+
+    <div class="weather_forecast">
+        <div>
+            <h1 class="forecast_title">תחזית מזג אוויר שבועית</h1>
+            <div class="">יום ראשון </div>
+            <div class="">יום שני</div>
+            <div class="">יום שלישי</div>
+            <div class="">יום רביעי</div>
+            <div class="">יום חמישי</div>
+            <div class="">יום שישי</div>
+            <div class="">יום שבת</div>
+        </div>
+    </div>
+
+
+    <hr>
+    <div class="last_menu">
+        <div class="the_last_list">
+            <h3 class="end_title">עוד באתר</h3>
+            <ul class="last_menu_list">
+                <li><a href="index.html">עמוד הבית </a></li>
+                <li><a href="">פעילויות</a></li>
+                <li><a href="">קצת עלינו </a></li>
+                <li><a href="">יצירת קשר</a></li>
+                <li><a href="">תמיכה ונגישות</a></li>
+            </ul>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
