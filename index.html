@@ -32,7 +32,7 @@
         .friday,
         .saturday {
             display: grid;
-            grid-template-columns:  1fr 200px 2fr 1fr;
+            grid-template-columns: 1fr 200px 2fr 1fr;
             align-items: center;
             text-align: center;
             list-style: none;
@@ -40,43 +40,75 @@
             border-radius: 3px;
             margin: 10px;
             padding: 10px;
+            transition: background-color 0.3s ease;
         }
 
-        .days{
+        .days {
             text-align: left;
             font-weight: bold;
         }
 
-        .material-symbols-outlined{
+        .material-symbols-outlined {
             font-size: 32px;
         }
 
-        .type_day{
+        .type_day {
             text-align: center;
             font-weight: bold;
         }
 
-        .temp{
+        .temp {
             text-align: right;
             font-weight: bold;
         }
 
-        .sunday{
+        .sunday {
             background-color: #fff3b0;
             border-color: #f4c430;
             color: #5c4a00;
         }
 
-        .monday , .tuesday{
+        .sunday:hover {
+            background: #ffe680;
+        }
+
+        .monday,
+        .tuesday {
             background-color: #eaf4ff;
             border-color: #9ec5e5;
             color: #2c4a66;
         }
 
-        .wednesday , .saturday{
+        .monday:hover,
+        .tuesday:hover {
+            background: #c6dfff;
+        }
+
+        .wednesday,
+        .saturday {
             background-color: #f0f2f5;
             border-color: #b0b7c3;
             color: #3a3f45;
+        }
+
+        .wednesday:hover,
+        .saturday:hover {
+            background: #d1d5d8;
+        }
+
+        .friday,
+        .thursday {
+            background-color: #f2f4f7;
+            border-color: #a0aec0;
+            color: #2d3748;
+        }
+
+        .thursday:hover {
+            background: #d3dee9;
+        }
+
+        .friday:hover {
+            background: #d3dee9;
         }
 
         .more_information {
@@ -108,19 +140,21 @@
 </head>
 
 <body>
-    <header class="total_menu">
-        <div class="logo_menu">
-            <nav class="menu">
-                <ul class="menu_list">
-                    <li id="home"><a href="index.html">Home</a></li>
-                    <li id="activities"><a href="">Activities</a></li>
-                    <li id="about_us"><a href="">About Us</a></li>
-                    <li id="contact_us"><a href="">Contact Us</a></li>
-                    <li id="support_accessibility"><a href="">Support & Accessibility</a></li>
-                </ul>
-            </nav>
+    <header class="header">
+        <img src="logo.png" alt="Logo" class="logo">
 
-            <img src="logo.png" alt="Logo" class="logo">
+        <nav class="nav">
+            <ul class="menu_list">
+                <li id="home"><a href="index.html">Home</a></li>
+                <li id="activities"><a href="">Activities</a></li>
+                <li id="about_us"><a href="">About Us</a></li>
+                <li id="contact_us"><a href="">Contact Us</a></li>
+                <li id="support_accessibility"><a href="">Support & Accessibility</a></li>
+            </ul>
+        </nav>
+
+        <div class="actions">
+            <button class="theme-toggle">Dark Mood</button>
         </div>
 
         <div class="hamburger">
@@ -128,7 +162,6 @@
                 menu
             </span>
         </div>
-
     </header>
 
     <div class="moto">
