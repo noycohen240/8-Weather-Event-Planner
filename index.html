@@ -6,15 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <style>
-        .the_body_of_home{
+        .the_body_of_home {
             display: flex;
             flex-direction: row-reverse;
         }
+
         .weather_forecast {
-            display: flex;
-            display: inline-block;
-            flex-direction: column;
-            align-items: center;
+            display: block;
             border: 1.5px solid;
             border-radius: 3px;
             width: 70%;
@@ -23,6 +21,7 @@
 
         .weather_forecast h1 {
             text-align: center;
+            margin-bottom: 20px;
         }
 
         .sunday,
@@ -32,40 +31,52 @@
         .thursday,
         .friday,
         .saturday {
-            display: flex;
-            flex-direction: row-reverse;
+            display: grid;
+            grid-template-columns:  1fr 200px 2fr 1fr;
+            align-items: center;
+            text-align: center;
             list-style: none;
             border: 1.5px solid;
             border-radius: 3px;
             margin: 10px;
             padding: 10px;
+        }
+
+        .days{
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .material-symbols-outlined{
+            font-size: 32px;
+        }
+
+        .type_day{
             text-align: center;
-            margin-right: 40px;
-            justify-content: space-between;
+            font-weight: bold;
         }
 
-        .monday_forecast {
-            margin-right: 35px;
+        .temp{
+            text-align: right;
+            font-weight: bold;
         }
 
-        .tuesday_forecast {
-            margin-right: 20px;
+        .sunday{
+            background-color: #fff3b0;
+            border-color: #f4c430;
+            color: #5c4a00;
         }
 
-        .wednesday_forecast {
-            margin-right: 10px;
+        .monday , .tuesday{
+            background-color: #eaf4ff;
+            border-color: #9ec5e5;
+            color: #2c4a66;
         }
 
-        .thursday_forecast {
-            margin-right: 5px;
-        }
-
-        .friday_forecast {
-            margin-right: 10px;
-        }
-
-        .saturday_forecast {
-            margin-right: 15px;
+        .wednesday , .saturday{
+            background-color: #f0f2f5;
+            border-color: #b0b7c3;
+            color: #3a3f45;
         }
 
         .more_information {
@@ -129,85 +140,87 @@
 
     <div class="the_body_of_home">
         <div class="weather_forecast">
-            <h1 class="forecast_title">תחזית מזג אוויר שבועית</h1>
-            <ol>
-                <li class="sunday">
-                    <div class="days">יום ראשון</div>
-                    <div class="sunday_forecast">
-                        <span class="material-symbols-outlined">
-                            clear_day
-                        </span>
+            <h1 class="forecast_title">Weekly Weather Forecast</h1>
+            <div class="ol_forecast">
+                <div class="days_Container">
+                    <div class="sunday">
+                        <span class="days">Sunday</span>
+                        <div class="sunday_forecast">
+                            <span class="material-symbols-outlined">
+                                clear_day
+                            </span>
+                        </div>
+                        <div class="type_day">Sunny</div>
+                        <div class="temp"> 25°-27°</div>
                     </div>
-                    <div class="type_day">שימשי</div>
-                    <div class="temp"> 25°-27°</div>
-                </li>
-                <li class="monday">
-                    <div class="days">יום שני</div>
-                    <div class="monday_forecast">
-                        <span class="material-symbols-outlined">
-                            partly_cloudy_day
-                        </span>
+                    <div class="monday">
+                        <span class="days">Monday</span>
+                        <div class="monday_forecast">
+                            <span class="material-symbols-outlined">
+                                partly_cloudy_day
+                            </span>
+                        </div>
+                        <div class="type_day">Partly Cloudy</div>
+                        <div class="temp">23°-26°</div>
                     </div>
-                    <div class="type_day">מעונן חלקית</div>
-                    <div class="temp">23°-26°</div>
-                </li>
-                <li class="tuesday">
-                    <div class="days">יום שלישי</div>
-                    <div class="tuesday_forecast"><span class="material-symbols-outlined">
-                            partly_cloudy_day
-                        </span></div>
-                    <div class="type_day">מעונן חלקית</div>
-                    <div class="temp">21°-24°</div>
-                </li>
-                <li class="wednesday">
-                    <div class="days">יום רביעי</div>
-                    <div class="wednesday_forecast"><span class="material-symbols-outlined">
-                            cloud
-                        </span></div>
-                    <div class="type_day">מעונן</div>
-                    <div class="temp">17°-22°</div>
-                </li>
-                <li class="thursday">
-                    <div class="days">יום חמישי</div>
-                    <div class="thursday_forecast"><span class="material-symbols-outlined">
-                            rainy
-                        </span></div>
-                    <div class="type_day">גשום</div>
-                    <div class="temp"> 14°-18°</div>
-                </li>
-                <li class="friday">
-                    <div class="days">יום שישי</div>
-                    <div class="friday_forecast"><span class="material-symbols-outlined">
-                            rainy
-                        </span></div>
-                    <div class="type_day">גשום</div>
-                    <div class="temp">13°-16°</div>
-                </li>
-                <li class="saturday">
-                    <div class="days">יום שבת</div>
-                    <div class="saturday_forecast"><span class="material-symbols-outlined">
-                            cloud
-                        </span></div>
-                    <div class="type_day">מעונן</div>
-                    <div class="temp">16°-20°</div>
-                </li>
-            </ol>
+                    <div class="tuesday">
+                        <span class="days">Tuesday</span>
+                        <div class="tuesday_forecast"><span class="material-symbols-outlined">
+                                partly_cloudy_day
+                            </span></div>
+                        <div class="type_day">Partly Cloudy</div>
+                        <div class="temp">21°-24°</div>
+                    </div>
+                    <div class="wednesday">
+                        <span class="days">Wednesday</span>
+                        <div class="wednesday_forecast"><span class="material-symbols-outlined">
+                                cloud
+                            </span></div>
+                        <div class="type_day">Cloudy</div>
+                        <div class="temp">17°-22°</div>
+                    </div>
+                    <div class="thursday">
+                        <span class="days">Thursday</span>
+                        <div class="thursday_forecast"><span class="material-symbols-outlined">
+                                rainy
+                            </span></div>
+                        <div class="type_day">Rainy</div>
+                        <div class="temp"> 14°-18°</div>
+                    </div>
+                    <div class="friday">
+                        <span class="days">Friday</span>
+                        <div class="friday_forecast"><span class="material-symbols-outlined">
+                                rainy
+                            </span></div>
+                        <div class="type_day">Rainy</div>
+                        <div class="temp">13°-16°</div>
+                    </div>
+                    <div class="saturday">
+                        <div class="days">Saturday</div>
+                        <div class="saturday_forecast"><span class="material-symbols-outlined">
+                                cloud
+                            </span></div>
+                        <div class="type_day">Cloudy</div>
+                        <div class="temp">16°-20°</div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="more_information">
             <div class="about_us_sec">
-                <h2>קצת עלינו </h2>
-                <p>אנחנו סטודנטים להנדסה תעשייה וניהול בשנה השלישית ללימודים </p>
-                <div><a href="">להמשך קריאה</a></div>
+                <h2>A Little About Us</h2>
+                <p>We are third-year Industrial Engineering and Management students...</p>
+                <div><a href="">To Continue Reading..</a></div>
             </div>
             <div class="recommended_activities">
-                <h2>רשימת פעילויות מומלצות</h2>
+                <h2>List Of Recommended Activities</h2>
                 <ul>
-                    <li>קטיף תותים ופרחים</li>
-                    <li>רכיבה על סוסים</li>
-                    <li>הסתובבות במרכז הקניות</li>
+                    <li>Picking strawberries and flowers</li>
+                    <li>Horse riding</li>
+                    <li>Walking around a shopping center</li>
                 </ul>
-                <div><a href="">להמשך קריאה</a></div>
+                <div><a href="">To Continue Reading..</a></div>
             </div>
         </div>
 
@@ -215,13 +228,13 @@
 
     <div class="last_menu">
         <div class="the_last_list">
-            <h3 class="end_title">עוד באתר</h3>
+            <h3 class="end_title">More On The Website</h3>
             <ul class="last_menu_list">
-                <li><a href="index.html">עמוד הבית </a></li>
-                <li><a href="">פעילויות</a></li>
-                <li><a href="">קצת עלינו </a></li>
-                <li><a href="">יצירת קשר</a></li>
-                <li><a href="">תמיכה ונגישות</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Activities</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Support & Accessibility</a></li>
             </ul>
         </div>
     </div>
