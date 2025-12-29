@@ -1,14 +1,21 @@
 const hamburger = document.querySelector(".hamburger");
-const menu_list = document.querySelector(".menu_list");
-const hamburgerIcon = hamburger.querySelector("span")
+const menuList = document.querySelector(".menu_list");
+const themeToggle = document.querySelector("theme_toggle");
 
-hamburger.addEventListener("click", function(){
-    menu_list.classList.toggle("active");
+hamburger.addEventListener("click", function () {
+    menuList.classList.toggle("active");
 
-    if(hamburgerIcon.textContent.trim() == "menu"){
-        hamburgerIcon.textContent = "close";
+});
+
+
+
+themeToggle.addEventListener("click", function () {
+    document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")){
+        themeToggle.textContent = "☀️";
     }
     else{
-        hamburgerIcon.textContent = "menu";
+        themeToggle.textContent = "🌙";
     }
 });
