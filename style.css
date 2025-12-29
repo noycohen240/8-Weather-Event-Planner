@@ -6,28 +6,42 @@
          'opsz' 24
  }
 
- .total_menu {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 20px;
+ .body{
+    margin: 0px;
+    background-color: #ffffff;
+    transition: 0.3s;
+
  }
 
- .logo_menu {
-     display: flex;
-     align-items: center;
-     gap: 30px;
+ .body.dark {
+    background-color: #121212;
+    color: #ffffff;
+ }
+
+ .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 1px solid #ccc;
+ }
+
+ .logo{
+    height: 70px;
  }
 
  .menu_list {
      display: flex;
-     flex-direction: row-reverse;
-     gap: 60px;
+     gap: 40px;
      list-style: none;
+     padding: 0;
+     margin: 0;
  }
 
  .menu_list a {
      text-decoration: none;
+     color: inherit;
+     font-weight: 500;
  }
 
  #home,
@@ -40,15 +54,27 @@
      padding: 10px;
  }
 
- .logo {
-     height: 90px;
-     margin-left: 250px;
-     width: auto;
+ .actions{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+ }
+
+ .theme_toggle{
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
  }
 
  .hamburger {
      display: none;
-     font-size: 30px;
+     font-size: 32px;
+     cursor: pointer;
+ }
+
+ .body.dark .header {
+    border-color: #333;
  }
 
  .moto {
@@ -107,13 +133,25 @@
      text-decoration: none;
  }
 
- @media (max-width: 768px) {
+ @media (max-width: 900px) {
      .menu_list {
-         display: none;
-         flex-direction: column;
+        position: absolute;
+        top: 90px;
+        right: 0;
+        width: 100%;
+        background-color: inherit;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 25px 0;
+        display: none;
      }
 
      .menu_list.active {
          display: flex;
+     }
+
+     .hamburger{
+        display: block;
      }
  }
