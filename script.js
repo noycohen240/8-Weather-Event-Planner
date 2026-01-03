@@ -8,7 +8,6 @@ hamburger.addEventListener("click", function () {
 });
 
 
-
 themeToggle.addEventListener("click", function () {
     console.log("dark mode click")
     document.body.classList.toggle("dark");
