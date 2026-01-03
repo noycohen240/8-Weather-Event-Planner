@@ -1,9 +1,9 @@
 const hamburger = document.querySelector(".hamburger");
-const menuList = document.querySelector(".menu_list");
-const themeToggle = document.querySelector("theme_toggle");
+const header = document.querySelector(".menu_list");
+const themeToggle = document.querySelector(".theme_toggle");
 
 hamburger.addEventListener("click", function () {
-    menuList.classList.toggle("active");
+    header.classList.toggle("nav-open");
 
 });
 
