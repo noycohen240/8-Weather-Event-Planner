@@ -9,13 +9,12 @@ hamburger.addEventListener("click", function () {
 
 
 themeToggle.addEventListener("click", function () {
-    console.log("dark mode click")
     document.body.classList.toggle("dark");
 
     if (document.body.classList.contains("dark")) {
-        themeToggle.textContent = "☀️";
+        themeToggle.textContent = "Light Mode";
     }
     else {
-        themeToggle.textContent = "🌙";
+        themeToggle.textContent = "Dark Mode";
     }
 });
