@@ -7,7 +7,7 @@
     <title>Home</title>
     <style>
         html {
-            font-family: 'Nunito' sans-serif;
+            font-family: 'Nunito', sans-serif;
         }
 
         .the_body_of_home {
@@ -23,8 +23,14 @@
             width: 70%;
             margin-left: 40px;
             margin-right: 70px;
-            background-color: #fafafa;
+            background: linear-gradient(to margin-bottom, #87ceeb , #b0e0e6) ;
             overflow: hidden;
+        }
+        
+        .weather_forecast > h1 , .weather_forecast > .ol_forecast {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 10px;
+            border-radius: 3px;
         }
 
         .weather_forecast h1 , .ol_forecast {
@@ -35,7 +41,7 @@
             color: #374151;
         }
 
-        .clouds_layer {
+        .cloud_layer {
             position: absolute;
             top: 0;
             left: 0;
@@ -46,11 +52,11 @@
         }
 
         .cloud_small , .cloud_medium , .cloud_large{
+            z-index: 0;
             position: absolute;
-            background: #fff;
+            background: rgba(255, 255, 255, 0.8);
             border-radius: 50%;
-            opacity: 0.7;
-            filter: blur(8px);
+            filter: blur(15px);
             animation-name: moveClouds;
             animation-timing-function: linear;
             animation-iteration-count: infinite;
