@@ -6,22 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <style>
+        body{
+            font-family: 'Nunito' sans-serif;
+        }
+        
         .the_body_of_home {
             display: flex;
-            flex-direction: row-reverse;
+            flex-direction: row;
         }
 
         .weather_forecast {
             display: block;
-            border: 1.5px solid;
+            border: 1.5px solid #cbd5e1;
             border-radius: 3px;
             width: 70%;
-            margin-right: 60px;
+            margin-left: 40px;
+            margin-right: 70px;
+            background-color: #fafafa;
         }
 
         .weather_forecast h1 {
             text-align: center;
             margin-bottom: 20px;
+            color: #374151;
         }
 
         .sunday,
@@ -98,28 +105,34 @@
 
         .friday,
         .thursday {
-            background-color: #f2f4f7;
+            background-color: #dbe3ee;
             border-color: #a0aec0;
             color: #2d3748;
         }
 
         .thursday:hover {
-            background: #d3dee9;
+            background: #cfd8e6;
         }
 
         .friday:hover {
-            background: #d3dee9;
+            background: #cfd8e6;
         }
 
         .more_information {
             display: flex;
             flex-direction: column;
             gap: 15px;
-            border: 1.5px solid;
+            border: 1.5px solid #cbd5e1;
             border-radius: 3px;
-            padding: 3px;
+            padding: 30px;
             width: 15%;
             margin-right: 70px;
+            background-color: #fafafa;
+        }
+
+        .more_information h2 {
+            text-align: center;
+            color: #374151;
         }
 
         .about_us_sec,
@@ -130,7 +143,29 @@
             gap: 10px;
             border: 1.5px solid;
             border-radius: 3px;
+            padding: 20px;
+            color: #374151;
+        }
+
+        .recommended_activities h3 {
+            text-align: center;
+        }
+
+        .recommend1,
+        .recommend2,
+        .recommend3 {
+            display: flex;
+            border-radius: 2px;
+            border: 0.8px solid;
             padding: 15px;
+            gap: 30px;
+            background-color: #eef9eb;
+        }
+
+        .about_us_sec a,
+        .recommended_activities a {
+            color: #6b21a8;
+            text-align: center;
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
@@ -140,7 +175,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
 </head>
@@ -246,19 +281,20 @@
         </div>
 
         <div class="more_information">
+            <h2>More Information</h2>
             <div class="about_us_sec">
-                <h2>A Little About Us</h2>
+                <h3>A Little About Us</h3>
                 <p>We are third-year Industrial Engineering and Management students...</p>
-                <div><a href="">To Continue Reading..</a></div>
+                <div><a href="">More About Us</a></div>
             </div>
             <div class="recommended_activities">
-                <h2>List Of Recommended Activities</h2>
-                <ul>
-                    <li>Picking strawberries and flowers</li>
-                    <li>Horse riding</li>
-                    <li>Walking around a shopping center</li>
-                </ul>
-                <div><a href="">To Continue Reading..</a></div>
+                <h3>Top 3 Activities</h3>
+                <div>
+                    <div class="recommend1">Picking strawberries and flowers</div>
+                    <div class="recommend2">Horse riding</div>
+                    <div class="recommend3">Walking around a shopping center</div>
+                </div>
+                <div><a href="">More Activities</a></div>
             </div>
         </div>
 
