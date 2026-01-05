@@ -10,30 +10,21 @@
             font-family: 'Nunito', sans-serif;
         }
 
-        .the_body_of_home {
-            display: flex;
-            flex-direction: row;
-        }
-
         .weather_forecast {
             position: relative;
             display: block;
             border: 1.5px solid #cbd5e1;
             border-radius: 3px;
-            width: 70%;
-            margin-left: 40px;
-            margin-right: 70px;
-            background: linear-gradient(to margin-bottom, #87ceeb , #b0e0e6) ;
+            width: 90%;
+            margin: 40px;
+            padding: 10px;
+            gap: 20px;
+            background: linear-gradient(180deg, #ffffff, #87e2e3);
             overflow: hidden;
         }
-        
-        .weather_forecast > h1 , .weather_forecast > .ol_forecast {
-            background-color: rgba(255, 255, 255, 0.85);
-            padding: 10px;
-            border-radius: 3px;
-        }
 
-        .weather_forecast h1 , .ol_forecast {
+        .weather_forecast h1,
+        .ol_forecast {
             position: relative;
             z-index: 1;
             text-align: center;
@@ -41,17 +32,23 @@
             color: #374151;
         }
 
+        .ol_forecast {
+            background-color: transparent;
+        }
+
         .cloud_layer {
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
+            width: 200%;
             height: 100%;
             pointer-events: none;
             z-index: 0;
         }
 
-        .cloud_small , .cloud_medium , .cloud_large{
+        .cloud_small,
+        .cloud_medium,
+        .cloud_large {
             z-index: 0;
             position: absolute;
             background: rgba(255, 255, 255, 0.8);
@@ -176,19 +173,14 @@
 
         .more_information {
             display: flex;
-            flex-direction: column;
-            gap: 15px;
+            flex-direction: row;
+            align-items: center;
             border: 1.5px solid #cbd5e1;
             border-radius: 3px;
-            padding: 30px;
-            width: 15%;
-            margin-right: 70px;
+            width: 90%;
+            margin: 40px;
+            padding: 10px;
             background-color: #fafafa;
-        }
-
-        .more_information h2 {
-            text-align: center;
-            color: #374151;
         }
 
         .about_us_sec,
@@ -197,6 +189,7 @@
             flex-direction: column;
             align-items: center;
             gap: 10px;
+            margin: 20px;
             border: 1.5px solid;
             border-radius: 3px;
             padding: 20px;
@@ -267,101 +260,99 @@
     </div>
 
 
-    <div class="the_body_of_home">
-        <div class="weather_forecast">
-            <div class="cloud_layer">
-                <div class="cloud_small" style="top: 10%; animation-duration: 60s;"></div>
-                <div class="cloud_medium" style="top: 30%; animation-duration: 90s;"></div>
-                <div class="cloud_large" style="top: 50%; animation-duration: 120s;"></div>
-                <div class="cloud_medium" style="top: 70%; animation-duration: 100s;"></div>
-                <div class="cloud_small" style="top: 85%; animation-duration: 80s;"></div>
-            </div>
-            <h1 class="forecast_title">Weekly Weather Forecast</h1>
-            <div class="ol_forecast">
-                <div class="days_Container">
-                    <div class="sunday">
-                        <span class="days">Sunday</span>
-                        <div class="sunday_forecast">
-                            <span class="material-symbols-outlined">
-                                clear_day
-                            </span>
-                        </div>
-                        <div class="type_day">Sunny</div>
-                        <div class="temp"> 25°-27°</div>
+
+    <div class="weather_forecast">
+        <div class="cloud_layer">
+            <div class="cloud_small" style="top: 10%; animation-duration: 60s;"></div>
+            <div class="cloud_medium" style="top: 30%; animation-duration: 90s;"></div>
+            <div class="cloud_large" style="top: 50%; animation-duration: 120s;"></div>
+            <div class="cloud_medium" style="top: 70%; animation-duration: 100s;"></div>
+            <div class="cloud_small" style="top: 85%; animation-duration: 80s;"></div>
+        </div>
+        <h1 class="forecast_title">Weekly Weather Forecast</h1>
+        <div class="ol_forecast">
+            <div class="days_Container">
+                <div class="sunday">
+                    <span class="days">Sunday</span>
+                    <div class="sunday_forecast">
+                        <span class="material-symbols-outlined">
+                            clear_day
+                        </span>
                     </div>
-                    <div class="monday">
-                        <span class="days">Monday</span>
-                        <div class="monday_forecast">
-                            <span class="material-symbols-outlined">
-                                partly_cloudy_day
-                            </span>
-                        </div>
-                        <div class="type_day">Partly Cloudy</div>
-                        <div class="temp">23°-26°</div>
+                    <div class="type_day">Sunny</div>
+                    <div class="temp"> 25°-27°</div>
+                </div>
+                <div class="monday">
+                    <span class="days">Monday</span>
+                    <div class="monday_forecast">
+                        <span class="material-symbols-outlined">
+                            partly_cloudy_day
+                        </span>
                     </div>
-                    <div class="tuesday">
-                        <span class="days">Tuesday</span>
-                        <div class="tuesday_forecast"><span class="material-symbols-outlined">
-                                partly_cloudy_day
-                            </span></div>
-                        <div class="type_day">Partly Cloudy</div>
-                        <div class="temp">21°-24°</div>
-                    </div>
-                    <div class="wednesday">
-                        <span class="days">Wednesday</span>
-                        <div class="wednesday_forecast"><span class="material-symbols-outlined">
-                                cloud
-                            </span></div>
-                        <div class="type_day">Cloudy</div>
-                        <div class="temp">17°-22°</div>
-                    </div>
-                    <div class="thursday">
-                        <span class="days">Thursday</span>
-                        <div class="thursday_forecast"><span class="material-symbols-outlined">
-                                rainy
-                            </span></div>
-                        <div class="type_day">Rainy</div>
-                        <div class="temp"> 14°-18°</div>
-                    </div>
-                    <div class="friday">
-                        <span class="days">Friday</span>
-                        <div class="friday_forecast"><span class="material-symbols-outlined">
-                                rainy
-                            </span></div>
-                        <div class="type_day">Rainy</div>
-                        <div class="temp">13°-16°</div>
-                    </div>
-                    <div class="saturday">
-                        <div class="days">Saturday</div>
-                        <div class="saturday_forecast"><span class="material-symbols-outlined">
-                                cloud
-                            </span></div>
-                        <div class="type_day">Cloudy</div>
-                        <div class="temp">16°-20°</div>
-                    </div>
+                    <div class="type_day">Partly Cloudy</div>
+                    <div class="temp">23°-26°</div>
+                </div>
+                <div class="tuesday">
+                    <span class="days">Tuesday</span>
+                    <div class="tuesday_forecast"><span class="material-symbols-outlined">
+                            partly_cloudy_day
+                        </span></div>
+                    <div class="type_day">Partly Cloudy</div>
+                    <div class="temp">21°-24°</div>
+                </div>
+                <div class="wednesday">
+                    <span class="days">Wednesday</span>
+                    <div class="wednesday_forecast"><span class="material-symbols-outlined">
+                            cloud
+                        </span></div>
+                    <div class="type_day">Cloudy</div>
+                    <div class="temp">17°-22°</div>
+                </div>
+                <div class="thursday">
+                    <span class="days">Thursday</span>
+                    <div class="thursday_forecast"><span class="material-symbols-outlined">
+                            rainy
+                        </span></div>
+                    <div class="type_day">Rainy</div>
+                    <div class="temp"> 14°-18°</div>
+                </div>
+                <div class="friday">
+                    <span class="days">Friday</span>
+                    <div class="friday_forecast"><span class="material-symbols-outlined">
+                            rainy
+                        </span></div>
+                    <div class="type_day">Rainy</div>
+                    <div class="temp">13°-16°</div>
+                </div>
+                <div class="saturday">
+                    <div class="days">Saturday</div>
+                    <div class="saturday_forecast"><span class="material-symbols-outlined">
+                            cloud
+                        </span></div>
+                    <div class="type_day">Cloudy</div>
+                    <div class="temp">16°-20°</div>
                 </div>
             </div>
         </div>
-
-        <div class="more_information">
-            <h2>More Information</h2>
-            <div class="about_us_sec">
-                <h3>A Little About Us</h3>
-                <p>We are third-year Industrial Engineering and Management students...</p>
-                <div><a href="">More About Us</a></div>
-            </div>
-            <div class="recommended_activities">
-                <h3>Top 3 Activities</h3>
-                <div>
-                    <div class="recommend1">Picking strawberries and flowers</div>
-                    <div class="recommend2">Horse riding</div>
-                    <div class="recommend3">Walking around a shopping center</div>
-                </div>
-                <div><a href="">More Activities</a></div>
-            </div>
-        </div>
-
     </div>
+
+    <div class="more_information">
+        <div class="about_us_sec">
+            <h3>A Little About Us</h3>
+            <p>We are third-year Industrial Engineering and Management students...</p>
+            <div><a href="">More About Us</a></div>
+        </div>
+        <div class="recommended_activities">
+            <h3>Top 3 Activities</h3>
+            <div>
+                <div class="recommend1">Picking strawberries and flowers</div>
+                <div class="recommend2">Horse riding</div>
+                <div class="recommend3">Walking around a shopping center</div>
+            </div>
+            <div><a href="">More Activities</a></div>
+        </div>
+    </div>
+
 
     <div class="last_menu">
         <div class="the_last_list">
