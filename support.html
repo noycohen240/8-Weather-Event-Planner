@@ -10,15 +10,15 @@
     body {
       margin: 0;
       display: flex;
-      flex-direction: column; /* אחד מתחת לשני */
-      align-items: center;    /* מיושר למרכז אופקי */
-      padding-top: 20px;
+      flex-direction: column; 
+      align-items: center;    
+      padding-top: 250px;
     }
 
     .thank_you_box {
       border: 2px solid black;
       padding: 20px;
-      width: 300px;
+      width: 400px;
       text-align: center;
       margin-bottom: 20px;
     }
@@ -26,7 +26,7 @@
     .form_box {
       border: 2px solid black;
       padding: 15px;
-      width: 300px;
+      width: 400px;
     }
 
     .form_box div {
@@ -35,7 +35,7 @@
 
     label {
       display: inline-block;
-      width: 100px;
+      width: 150px;
     }
 
     input, textarea {
@@ -44,7 +44,7 @@
     }
 
     textarea {
-      height: 60px;
+      height: 100px;
     }
 
     button {
@@ -56,11 +56,12 @@
 <body>
 
   <div class="thank_you_box">
-    Thank You for choosing our website!<br>
-    We're glad you are here and look forward to hearing from you.
+    Talk with us!<br>
+    We're glad to hear from you.
   </div>
-
+  
   <div class="form_box">
+    <center><h2>Talk With Us</h2></center>
     <form>
 
       <div>
@@ -82,9 +83,12 @@
         <label for="message_content">Message content:</label>
         <textarea id="message_content" name="message_content"></textarea>
       </div>
-
-      <button type="submit">Send</button>
-
+    
+      <div align = "right">
+         <button type="submit">Send</button>
+         <button type="reset">Reset</button>
+      </div>
+     
     </form>
   </div>
 
