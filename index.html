@@ -173,27 +173,15 @@
 
         .more_information {
             display: flex;
-            flex-direction: row;
-            align-items: center;
+            align-items: stretch;
+            justify-content: center;
             border: 1.5px solid #cbd5e1;
             border-radius: 3px;
+            gap: 40px;
             width: 90%;
             margin: 40px;
             padding: 10px;
             background-color: #fafafa;
-        }
-
-        .about_us_sec,
-        .recommended_activities {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-            margin: 20px;
-            border: 1.5px solid;
-            border-radius: 3px;
-            padding: 20px;
-            color: #374151;
         }
 
         .recommended_activities h3 {
@@ -211,7 +199,6 @@
             background-color: #eef9eb;
         }
 
-        .about_us_sec a,
         .recommended_activities a {
             color: #6b21a8;
             text-align: center;
@@ -337,18 +324,11 @@
     </div>
 
     <div class="more_information">
-        <div class="about_us_sec">
-            <h3>A Little About Us</h3>
-            <p>We are third-year Industrial Engineering and Management students...</p>
-            <div><a href="">More About Us</a></div>
-        </div>
+        <h3>Top 3 Activities</h3>
         <div class="recommended_activities">
-            <h3>Top 3 Activities</h3>
-            <div>
-                <div class="recommend1">Picking strawberries and flowers</div>
-                <div class="recommend2">Horse riding</div>
-                <div class="recommend3">Walking around a shopping center</div>
-            </div>
+            <div class="recommend1">Picking strawberries and flowers</div>
+            <div class="recommend2">Horse riding</div>
+            <div class="recommend3">Walking around a shopping center</div>
             <div><a href="">More Activities</a></div>
         </div>
     </div>
