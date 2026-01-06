@@ -173,11 +173,12 @@
 
         .more_information {
             display: flex;
-            align-items: stretch;
+            flex-direction: column;
+            align-items: center;
             justify-content: center;
             border: 1.5px solid #cbd5e1;
             border-radius: 3px;
-            gap: 40px;
+            gap: 15px;
             width: 90%;
             margin: 40px;
             padding: 10px;
@@ -191,16 +192,29 @@
         .recommended_activities {
             display: flex;
             flex-direction: row;
+            justify-items: space-around;
+            height: 400px;
+            width: 300px;
+            margin-right: 500px;
+
         }
 
-        .recommend1,
-        .recommend2,
-        .recommend3 {
+        .recommend {
             padding: 12px;
             background-color: #eef9eb;
             border-radius: 3px;
             font-size: 0.95rem;
             margin: 30px;
+        }
+
+        .recommend h4{
+            text-align: center;
+        }
+
+        .recommend div {
+            background-color: #f9e65a;
+            border-radius: 20px;
+            text-align: center;
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
@@ -325,10 +339,23 @@
     <div class="more_information">
         <h2>Top 3 Activities</h2>
         <div class="recommended_activities">
-            <div class="recommend1">Picking strawberries and flowers</div>
-            <div class="recommend2">Horse riding</div>
-            <div class="recommend3">Walking around a shopping center</div>
+            <div class="recommend"><img src="strawberries.png" alt="Picking strawberries" width="190px" height="110px">
+                <h4>Picking strawberries</h4>
+                <div>Available only in winter</div>
+                <p>A lovely place, you can pick strawberries and eat them. This activity is <em><strong> suitable for everyone</strong></em>. </p>
+            </div>
+            <div class="recommend"><img src="riding.png" alt="Horse riding" width="190px" height="110px">
+                <h4>Horse riding</h4>
+                <div>Suitable for a sunny day</div>
+                <p>Relaxing horseback riding, <em><strong>suitable for couples and families</strong></em>.</p>
+            </div>
+            <div class="recommend"><img src="mall.png" alt="shopping in the mall" width="190px" height="110px">
+                <h4>Walking around a shopping center</h4>
+                <div>Suitable for all weather</div>
+                <p>Shopping center and malls nationwide are always available for you.<em><strong> Suitable for everyone</strong></em>.</p>
+            </div>
         </div>
+        <a href="" class="activities_link">More activities...</a>
     </div>
 
 
