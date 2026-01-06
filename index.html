@@ -181,27 +181,26 @@
             width: 90%;
             margin: 40px;
             padding: 10px;
-            background-color: #fafafa;
+            background-color: #f9fafb;
         }
 
-        .recommended_activities h3 {
+        .more_information h2 {
             text-align: center;
+        }
+
+        .recommended_activities {
+            display: flex;
+            flex-direction: row;
         }
 
         .recommend1,
         .recommend2,
         .recommend3 {
-            display: flex;
-            border-radius: 2px;
-            border: 0.8px solid;
-            padding: 15px;
-            gap: 30px;
+            padding: 12px;
             background-color: #eef9eb;
-        }
-
-        .recommended_activities a {
-            color: #6b21a8;
-            text-align: center;
+            border-radius: 3px;
+            font-size: 0.95rem;
+            margin: 30px;
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
@@ -324,12 +323,11 @@
     </div>
 
     <div class="more_information">
-        <h3>Top 3 Activities</h3>
+        <h2>Top 3 Activities</h2>
         <div class="recommended_activities">
             <div class="recommend1">Picking strawberries and flowers</div>
             <div class="recommend2">Horse riding</div>
             <div class="recommend3">Walking around a shopping center</div>
-            <div><a href="">More Activities</a></div>
         </div>
     </div>
 
@@ -343,12 +341,11 @@
                 <li><a href="">About Us</a></li>
                 <li><a href="">Support & Accessibility</a></li>
             </ul>
+            <footer class="our_footer">
+                <small>&copy;Any Weather</small>
+            </footer>
         </div>
     </div>
-
-    <footer>
-        <small>&copy;Any Weather</small>
-    </footer>
 
     <script src="script.js"></script>
 </body>
