@@ -79,7 +79,7 @@
      border: solid #ffecb3;
      border-radius: 3px;
      padding: 10px;
-     margin: 40px;
+     margin: 50px;
      margin-top: 20px;
      position: relative;
  }
@@ -102,15 +102,15 @@
  }
 
  .last_menu {
+     width: 92%;
+     margin: 50px;
+     background-color: #f1f5f9;
+     border-radius: 3px;
+     border: solid 2px;
+     border-color: #cbd5e1;
      display: flex;
      justify-content: center;
      align-items: center;
-     border-radius: 3px;
-     border: solid 2px;
-     margin: 40px;
-     margin-right: 60px;
-     background-color: #f1f5f9;
-     border-color: #cbd5e1;
  }
 
  .last_menu h3 {
@@ -179,17 +179,22 @@
  }
 
  @media (min-width: 481px) and (max-width: 1200px) {
+    .moto{
+        margin: 20px;
+    }
+
      .menu_list {
          width: 100%;
      }
 
-     .logo{
-        margin-left: 20px;
-        margin-right: 50px;
+     .logo {
+         margin-left: 20px;
+         margin-right: 50px;
      }
 
-     .last_menu{
-        width: 96%;
+     .last_menu {
+         width: 93%;
+         margin: 20px;
      }
  }
 
