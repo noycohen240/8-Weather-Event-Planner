@@ -102,13 +102,13 @@
  }
 
  .last_menu {
-     width: 92%;
-     margin: 50px;
+     width: 100%;
      background-color: #f1f5f9;
+     border: solid 1.5px;
      border-radius: 3px;
-     border: solid 2px;
      border-color: #cbd5e1;
      display: flex;
+     justify-items: center;
      justify-content: center;
      align-items: center;
  }
