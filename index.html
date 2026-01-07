@@ -229,7 +229,7 @@
                 margin: 5px;
             }
 
-            .weather_forecast h1{
+            .weather_forecast h1 {
                 font-size: 24px;
             }
 
@@ -259,7 +259,7 @@
                 box-sizing: border-box;
             }
 
-            .more_information h2{
+            .more_information h2 {
                 text-align: center;
                 margin-top: 5px;
                 margin-bottom: 7px;
@@ -273,7 +273,7 @@
                 margin-left: 15px;
             }
 
-            .recommend{
+            .recommend {
                 width: 250px;
                 height: 240px;
                 font-size: 0.9rem;
@@ -284,22 +284,52 @@
                 align-items: center;
             }
 
-            .recommend img{
+            .recommend img {
                 width: 60%
             }
 
-            .recommend p{
+            .recommend p {
                 text-align: center;
                 font-size: 14px;
             }
 
-            .more_information a{
+            .more_information a {
                 margin-left: 0;
                 margin-top: 450px;
             }
         }
 
-        @media (min-width: 481px) and (max-width: 1200px) {}
+        @media (min-width: 481px) and (max-width: 1200px) {
+            .recommended_activities {
+                display: flex;
+                flex-direction: row;
+                justify-items: flex-start;
+            }
+
+            .recommend {
+                display: flex;
+                flex-direction: column;
+                width: 450px;
+                height: 350px;
+                font-size: 1rem;
+                margin: 10px;
+                margin-left: 100px;
+            }
+
+            .recommend img {
+                width: 100px;
+                height: 90px;
+            }
+
+            .recommend p {
+                text-align: center;
+                font-size: 14px;
+            }
+
+            .more_information a {
+                margin-right: 450px;
+            }
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
