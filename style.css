@@ -6,9 +6,9 @@
          'opsz' 24
  }
 
- .body {
+ body {
      margin: 0px;
-     background-color: #ffffff;
+     background-color:  #f7fdf9;
      transition: 0.3s;
  }
 
@@ -19,6 +19,7 @@
      padding: 15px 30px;
      border-bottom: 1px solid #ccc;
      color: #1e3a8a;
+     background-color: white;
  }
 
  .logo {
