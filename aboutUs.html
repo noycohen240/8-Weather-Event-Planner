@@ -10,43 +10,55 @@
             font-family: 'Nunito', sans-serif;
         }
 
-         html {
-        font-family: 'Nunito', sans-serif;
-    }
+        html {
+            font-family: 'Nunito', sans-serif;
+        }
 
-    .about_main {
-        display: flex;
-        justify-content: center;
-        padding: 40px 16px;
-    }
+        .about_main {
+            display: flex;
+            justify-content: center;
+            padding: 0px 0px;
+        }
 
-    .about_box {
-        width: 90%;
-        max-width: 900px;
-        border: 3px solid #000;
-        border-radius: 28px;
-        padding: 24px;
-    }
+        .about_box {
+            width: 90%;
+            max-width: 900px;
+            border: 3px solid #000;
+            border-radius: 28px;
+            padding: 24px;
+        }
 
-    .about_title {
-        margin: 0;
-        font-size: 28px;
-        font-weight: 700;
-    }
+        .about_title {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
 
-    .about_divider {
-        border: none;
-        border-top: 2px solid #000;
-        margin: 18px 0;
-    }
+        .about_divider {
+            border: none;
+            border-top: 2px solid #000;
+            margin: 18px 0;
+        }
 
-    .about_text {
-        margin: 0;
-        font-size: 20px;
-        line-height: 1.6;
-    }
+        .about_text {
+            margin: 0;
+            font-size: 20px;
+            line-height: 1.6;
+        }
 
+        .about_wrapper {
+            display: flex;
+            gap: 24px;
+            /* רווח בין הקופסאות */
+            justify-content: center;
+            align-items: stretch;
+        }
 
+        .about_box {
+            flex: 1;
+            /* כל קופסה תופסת חצי */
+            max-width: 450px;
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
@@ -88,25 +100,22 @@
     </div>
 
     <main class="about_main">
-    <section class="about_box">
-        <h2 class="about_title">About Us</h2>
+        <div class="about_wrapper">
 
-        <hr class="about_divider">
+            <section class="about_box">
+                <h2 class="about_title">About Us</h2>
+                <hr class="about_divider">
+                <p class="about_text">לרשום פה מלל</p>
+            </section>
 
-        <p class="about_text">
-           לרשום פה מלל
-        </p>
-    </section>
-</main>
+            <section class="about_box">
+                <h2 class="about_title">Second Box</h2>
+                <hr class="about_divider">
+                <p class="about_text">עוד תוכן כאן</p>
+            </section>
 
-
-
-
-
-
-
-
-
+        </div>
+    </main>
 
 
 
