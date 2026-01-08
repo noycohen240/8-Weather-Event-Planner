@@ -72,6 +72,10 @@
      cursor: pointer;
  }
 
+ body.menu_open{
+    background-color: white;
+ }
+ 
  .moto {
      width: 90%;
      overflow: hidden;
@@ -179,9 +183,9 @@
  }
 
  @media (min-width: 481px) and (max-width: 1200px) {
-    .moto{
-        margin: 20px;
-    }
+     .moto {
+         margin: 20px;
+     }
 
      .menu_list {
          width: 100%;
@@ -199,21 +203,55 @@
  }
 
  @media (max-width: 700px) {
+
+     #home,
+     #about_us,
+     #activities,
+     #support_accessibility {
+         border: none;
+         background-color: transparent;
+         padding: 0;
+     }
+
      .menu_list {
          position: absolute;
-         top: 90px;
+         top: 100%;
+         margin-top: 70px;
          right: 0;
          width: 100%;
-         background-color: inherit;
+         background-color: #ffffff;
          flex-direction: column;
-         align-items: center;
-         gap: 25px;
-         padding: 25px 0;
+         align-items: stretch;
+         gap: 0;
+         padding: 0;
          display: none;
+         z-index: 1000;
+     }
+
+     .menu_list li {
+         width: 100%;
+         border-bottom: 1px solid #e5e7eb;
+     }
+
+     .menu_list a {
+         display: block;
+         width: 100%;
+         padding: 16px 20px;
+         text-align: left;
+         color: #1e3a8a;
+         font-weight: 600;
+     }
+
+     .menu_list a:hover{
+        background-color: #f1f5f9;
      }
 
      .menu_list.active {
          display: flex;
+     }
+
+     .nav {
+         position: relative;
      }
 
      .hamburger {
@@ -222,5 +260,9 @@
 
      .logo {
          margin-left: 0;
+     }
+
+     .header {
+         position: relative;
      }
  }
