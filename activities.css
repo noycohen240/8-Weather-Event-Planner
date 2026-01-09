@@ -223,13 +223,47 @@
      .logo {
          margin-left: 0;
      }}
-     .filter-group {
-    margin: 20px;
+ .selection-area {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 200px;
+    justify-content: center; /* ממרכז אופקית */
+    align-items: center;     /* ממרכז אנכית */
+    margin: 50px 0;          /* מרווח גדול מהמוטו ומהכרטיסיות */
 }
+
+.filter-group {
+    display: flex;
+    flex-direction: column;  /* שם את הטקסט מעל התיבה */
+    align-items: center;     /* ממרכז את הטקסט ביחס לתיבה */
+    gap: 15px;               /* רווח בין הטקסט לתיבה */
+    width: 100%;
+    max-width: 500px;        /* מגביל את הרווח המקסימלי */
+}
+
+.filter-label {
+    font-size: 1.5rem;       /* הגדלת הפונט של הכותרת */
+    color: #1e3a8a;
+    font-weight: bold;
+    text-align: center;
+}
+
+.modern-select {
+    width: 100%;             /* תופס את כל רוחב ה-filter-group */
+    padding: 15px 25px;      /* הגדלת שטח הלחיצה (גובה ורוחב פנימי) */
+    font-size: 1.3rem;       /* הגדלת הטקסט בתוך התיבה */
+    border-radius: 12px;
+    border: 2px solid #1e3a8a;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* צל שנותן עומק */
+    transition: all 0.3s ease;
+}
+
+.modern-select:hover {
+    border-color: #3b82f6;
+    transform: scale(1.02);  /* הגדלה קלה כשמעבירים עכבר */
+}
+
 #daySelect {
     padding: 10px;
     border-radius: 5px;
@@ -261,8 +295,8 @@
 }
 .image-placeholder {
     width: 100%;
-    aspect-ratio: 1 / 1; /* הופך את הקופסא לריבוע מושלם */
-    background-color: #f1f5f9;
+    aspect-ratio: 1.2 / 1; 
+    background-color:   #f1f8f9;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -271,15 +305,4 @@
 .card-info {
     padding: 15px;
     text-align: center;
-}
-.card-info h3 {
-    margin: 0 0 8px 0;
-    color: #1e3a8a;
-    font-size: 1.2rem;
-}
-
-.card-info p {
-    margin: 0;
-    color: #64748b;
-    font-size: 0.95rem;
 }
