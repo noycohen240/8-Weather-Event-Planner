@@ -6,6 +6,16 @@
          'opsz' 24
  }
 
+ h1,
+ h2,
+ h3 {
+     font-family: 'Quicksand', sans-serif;
+ }
+
+ body {
+     font-family: 'Nunito', sans-serif;
+ }
+
  body {
      margin: 0px;
      background-color: #f7fdf9;
@@ -41,23 +51,11 @@
      font-weight: 500;
  }
 
- #home,
- #about_us,
- #activities,
- #support_accessibility {
-     border: solid 1.5px;
-     border-radius: 3px;
-     padding: 10px;
-     border-color: #94a3b8;
-     background-color: #f1f5f9;
- }
-
-
  #home:hover,
  #activities:hover,
  #about_us:hover,
  #support_accessibility:hover {
-     background-color: #e0f2fe;
+     color: #6FA8A1;
  }
 
  .actions {
@@ -72,10 +70,10 @@
      cursor: pointer;
  }
 
- body.menu_open{
-    background-color: white;
+ body.menu_open {
+     background-color: white;
  }
- 
+
  .moto {
      width: 90%;
      overflow: hidden;
@@ -209,7 +207,7 @@
      #activities,
      #support_accessibility {
          border: none;
-         background-color: transparent;
+         background-color: white;
          padding: 0;
      }
 
@@ -242,8 +240,8 @@
          font-weight: 600;
      }
 
-     .menu_list a:hover{
-        background-color: #f1f5f9;
+     .menu_list a:hover {
+         background-color: #f1f5f9;
      }
 
      .menu_list.active {
