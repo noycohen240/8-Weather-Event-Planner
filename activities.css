@@ -223,4 +223,19 @@
      .logo {
          margin-left: 0;
      }}
-     
+     .filter-group {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 200px;
+}
+#daySelect {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #617dd8;
+    background-color: beige;
+    font-family: inherit;
+    cursor: pointer;
+}
+
