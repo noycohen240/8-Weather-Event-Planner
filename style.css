@@ -78,7 +78,7 @@
      width: 90%;
      overflow: hidden;
      background-color: #fff9c4;
-     border: solid #ffecb3;
+     border: 0.7px solid #ffecb3;
      border-radius: 3px;
      padding: 10px;
      margin: 50px;
@@ -106,9 +106,6 @@
  .last_menu {
      width: 100%;
      background-color: #f1f5f9;
-     border: solid 1.5px;
-     border-radius: 3px;
-     border-color: #cbd5e1;
      display: flex;
      justify-items: center;
      justify-content: center;
@@ -117,10 +114,6 @@
 
  .last_menu h3 {
      color: #1e3a8a;
- }
-
- .end_title {
-     margin-left: 45px;
  }
 
  .last_menu_list {
@@ -135,6 +128,7 @@
  .last_menu_list a {
      text-decoration: none;
      color: #1e3a8a;
+     
  }
 
  .our_footer {
