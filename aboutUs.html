@@ -19,8 +19,7 @@
             justify-content: center;
             padding: 0px 0px;
             margin-top: 0;
-            margin-bottom: 64px
-            width: 100%;
+            margin-bottom: 64px width: 100%;
         }
 
         .about_box {
@@ -31,12 +30,15 @@
             padding: 24px;
             flex: 1;
             min-height: 320px;
-          
+            background: rgba(255, 255, 255, 0.65);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+
         }
 
         .about_title {
             margin: 0;
-            font-size: 28px;
+            font-size: 34px;
             font-weight: 700;
         }
 
@@ -48,19 +50,20 @@
 
         .about_text {
             margin: 0;
-            font-size: 4px;
-            line-height: 1.6;
+            font-size: 18px;
+            line-height: 1.7;
+            color: rgba(0, 0, 0, 0.85);
         }
 
         .about_wrapper {
             display: flex;
-            justify-content: flex-start;
-            gap: 16px;
+            justify-content: center;
+            gap: 80px;
             align-items: stretch;
-            padding: 0 32px;
+            padding: 24px 48px;
             width: 100%;
             box-sizing: border-box;
-            max-width: 1300px; 
+            max-width: 1300px;
             padding-bottom: 50px;
         }
 
@@ -108,7 +111,6 @@
 
     <main class="about_main">
         <div class="about_wrapper">
-
             <section class="about_box">
                 <h2 class="about_title">About Us</h2>
                 <hr class="about_divider">
