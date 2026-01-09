@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <style>
-        html {
-            font-family: 'Nunito', sans-serif;
-        }
-
         .weather_forecast {
             position: relative;
             display: block;
@@ -66,7 +62,7 @@
 
         .cloud_medium {
             width: 150px;
-            height: 80px;
+            height: 100px;
         }
 
         .cloud_large {
@@ -123,13 +119,13 @@
         }
 
         .sunday {
-            background-color: #fff3b0;
-            border-color: #f4c430;
+            background-color: #FFF7D6;
+            border-color: #F2D98C;
             color: #5c4a00;
         }
 
         .sunday:hover {
-            background: #ffe680;
+            background: #FFEFC2;
         }
 
         .monday,
@@ -176,19 +172,17 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            border: 1.5px solid #cbd5e1;
             border-radius: 3px;
             gap: 15px;
             width: 90%;
             margin: 50px;
             padding: 10px;
-            background-color: #F9fafb;
         }
 
         .more_information h2 {
-            text-align: center;
             position: relative;
-            margin-top: 50px;
+            text-align: center;
+            margin-bottom: 20px;
             color: #374151;
         }
 
@@ -207,6 +201,7 @@
             border-radius: 3px;
             font-size: 0.95rem;
             margin: 30px;
+            border-color: #F2F2F2;
         }
 
         .recommend h4 {
@@ -219,8 +214,26 @@
             text-align: center;
         }
 
-        .more_information a {
-            margin-left: 900px;
+        .activities_link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            padding: 12px 22px;
+            margin-top: 24px;
+            background-color: #ffffff;
+            color: #4f8f88;
+            border: 1.5px solid #6fa8a1;
+            border-radius: 50px;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .activities_link:hover {
+            background-color: #e8f4f2;
         }
 
         @media (min-width: 319px) and (max-width: 480px) {
@@ -301,11 +314,11 @@
 
         @media (min-width: 481px) and (max-width: 1200px) {
 
-            .weather_forecast{
+            .weather_forecast {
                 margin: 20px;
             }
-            
-            .more_information{
+
+            .more_information {
                 margin: 20px;
             }
 
@@ -347,8 +360,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap"
         rel="stylesheet">
+
 
 </head>
 
@@ -478,7 +492,7 @@
                             everyone</strong></em>.</p>
             </div>
         </div>
-        <a href="" class="activities_link">More activities...</a>
+        <a href="" class="activities_link"> View All Activities →</a>
     </div>
 
 
