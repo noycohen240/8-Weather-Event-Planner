@@ -233,35 +233,35 @@
 
 .filter-group {
     display: flex;
-    flex-direction: column;  /* שם את הטקסט מעל התיבה */
-    align-items: center;     /* ממרכז את הטקסט ביחס לתיבה */
-    gap: 15px;               /* רווח בין הטקסט לתיבה */
+    flex-direction: column;  
+    align-items: center;    
+    gap: 15px;               
     width: 100%;
-    max-width: 500px;        /* מגביל את הרווח המקסימלי */
+    max-width: 500px;        
 }
 
 .filter-label {
-    font-size: 1.5rem;       /* הגדלת הפונט של הכותרת */
+    font-size: 1.5rem;       
     color: #1e3a8a;
     font-weight: bold;
     text-align: center;
 }
 
 .modern-select {
-    width: 100%;             /* תופס את כל רוחב ה-filter-group */
-    padding: 15px 25px;      /* הגדלת שטח הלחיצה (גובה ורוחב פנימי) */
-    font-size: 1.3rem;       /* הגדלת הטקסט בתוך התיבה */
+    width: 100%;             
+    padding: 15px 25px;      
+    font-size: 1.3rem;       
     border-radius: 12px;
     border: 2px solid #1e3a8a;
     background-color: white;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* צל שנותן עומק */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
     transition: all 0.3s ease;
 }
 
 .modern-select:hover {
     border-color: #3b82f6;
-    transform: scale(1.02);  /* הגדלה קלה כשמעבירים עכבר */
+    transform: scale(1.02);  /
 }
 
 #daySelect {
@@ -292,7 +292,14 @@
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
 }
+.activity-card:hover
+{  transform: translateY(-5px); 
+    box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3); 
+    border-color: #1e3a8a;
+}
+  
 .image-placeholder {
     width: 100%;
     aspect-ratio: 1.2 / 1; 
