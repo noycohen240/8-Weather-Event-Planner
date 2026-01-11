@@ -76,7 +76,7 @@
             }
 
             100% {
-                transform: translateX(110%);
+                transform: translateX(500%);
             }
         }
 
@@ -203,8 +203,15 @@
             background-color: #eef9eb;
             border-radius: 3px;
             font-size: 0.95rem;
-            margin: 30px;
+            margin: 40px;
             border-color: #F2F2F2;
+            transform: 0.3s ease;
+            box-shadow: 0.3s ease;
+        }
+
+        .recommend:hover{
+            transform: scale(1.05);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
         }
 
         .recommend h4 {
@@ -225,8 +232,8 @@
             padding: 12px 22px;
             margin-top: 24px;
             background-color: #ffffff;
-            color: #4f8f88;
-            border: 1.5px solid #6fa8a1;
+            color: #6f9f78;
+            border: 1.5px solid #6f9f78;
             border-radius: 50px;
             font-family: 'Quicksand', sans-serif;
             font-size: 16px;
@@ -420,10 +427,10 @@
 
     <div class="weather_forecast">
         <div class="cloud_layer">
-            <div class="cloud_small" style="top: 10%; animation-duration: 60s;"></div>
-            <div class="cloud_medium" style="top: 30%; animation-duration: 90s;"></div>
-            <div class="cloud_large" style="top: 50%; animation-duration: 120s;"></div>
-            <div class="cloud_medium" style="top: 70%; animation-duration: 100s;"></div>
+            <div class="cloud_small" style="top: 10%; animation-duration: 40s;"></div>
+            <div class="cloud_medium" style="top: 30%; animation-duration: 60s;"></div>
+            <div class="cloud_large" style="top: 50%; animation-duration: 80s;"></div>
+            <div class="cloud_medium" style="top: 70%; animation-duration: 90s;"></div>
             <div class="cloud_small" style="top: 85%; animation-duration: 80s;"></div>
         </div>
         <h1 class="forecast_title">Weekly Weather Forecast</h1>
@@ -494,7 +501,7 @@
     </div>
 
     <div class="more_information">
-        <h2>Top 3 Activities</h2>
+        <h2>Top Three Activities For You</h2>
         <div class="recommended_activities">
             <div class="recommend"><img src="strawberries.png" alt="Picking strawberries" width="190px" height="110px">
                 <h4>Picking strawberries</h4>
