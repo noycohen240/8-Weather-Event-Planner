@@ -43,6 +43,9 @@
             margin: 0;
             font-size: 34px;
             font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
         .about_divider {
@@ -69,7 +72,13 @@
             max-width: 1300px;
             padding-bottom: 50px;
         }
+
+        .about_title .material-symbols-outlined {
+            font-size: 32px;
+            color: #1f4aa8;
+        }
     </style>
+
 
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
@@ -113,7 +122,8 @@
     <main class="about_main">
         <div class="about_wrapper">
             <section class="about_box">
-                <h2 class="about_title">About Us</h2>
+                <h2 class="about_title"><span class="material-symbols-outlined">info</span>
+                    About Us</h2>
                 <hr class="about_divider">
                 <p class="about_text">Any Weather is a smart platform designed to help people plan outdoor activities
                     with confidence.
@@ -123,7 +133,8 @@
             </section>
 
             <section class="about_box">
-                <h2 class="about_title">Second Box</h2>
+                <h2 class="about_title"><span class="material-symbols-outlined">flag</span>
+                    Our Mission</h2>
                 <hr class="about_divider">
                 <p class="about_text">Our mission is to make outdoor experiences simple, safe, and accessible for
                     everyone.
