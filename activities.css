@@ -7,9 +7,13 @@
 }
 
 body {
-    margin: 0px;
-    background-color: #f7fdf9;
-    transition: 0.3s;
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(180deg, 
+        #ffffff 0%, 
+        #fff9c4 65%, 
+        #fef08a 100%);
+    background-attachment: fixed;
 }
 
 .header {
@@ -73,13 +77,13 @@ body {
 }
 
 .moto {
-    width: 90%;
+    width: 100%;
     overflow: hidden;
     background-color: #fff9c4;
     border: solid #ffecb3;
-    border-radius: 3px;
+    border-radius: 0px;
     padding: 10px;
-    margin: 50px;
+    margin: 0px;
     margin-top: 20px;
     position: relative;
 }
@@ -145,7 +149,7 @@ body {
 
 @media (min-width: 319px) and (max-width: 480px) {
     .moto {
-        width: 90%;
+        width: 100%;
         margin: 5px;
         margin-top: 10px;
         margin-bottom: 10px;
