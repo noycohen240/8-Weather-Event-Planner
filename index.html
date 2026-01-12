@@ -210,7 +210,7 @@
             box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
         }
 
-        .recommend:hover{
+        .recommend:hover {
             transform: scale(1.05);
             box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
         }
@@ -359,7 +359,7 @@
                 padding: 0 20px;
             }
 
-            .more_information h2{
+            .more_information h2 {
                 margin-right: 30px;
             }
 
@@ -391,30 +391,33 @@
                 font-size: 14px;
             }
 
-            .more_information a{
+            .more_information a {
                 margin-right: 45px;
                 margin-top: 40px;
                 margin-bottom: 0;
             }
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
-        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&family=Quicksand:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" media="print"
+        onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    </noscript>
+
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
     <header class="header">
-        <img src="logo.png" alt="Logo" class="logo">
-
+        <img src="logo.png" alt="Logo" class="logo" width="90" height="80" fetchpriority="high">
         <nav class="nav">
             <ul class="menu_list">
                 <li id="home"><a href="index.html">Home</a></li>
@@ -519,18 +522,18 @@
     <div class="more_information">
         <h2>Top Three Activities For You</h2>
         <div class="recommended_activities">
-            <div class="recommend"><img src="strawberries.png" alt="Picking strawberries" width="190px" height="110px">
+            <div class="recommend"><img src="strawberries.webp" alt="Picking strawberries" width="190" height="110" loading="lazy">
                 <h4>Picking strawberries</h4>
                 <div>Available only in winter</div>
                 <p>A lovely place, you can pick strawberries and eat them. This activity is <em><strong> suitable for
                             everyone</strong></em>. </p>
             </div>
-            <div class="recommend"><img src="riding.png" alt="Horse riding" width="190px" height="110px">
+            <div class="recommend"><img src="riding.webp" alt="Horse riding" width="190" height="110" loading="lazy">
                 <h4>Horse riding</h4>
                 <div>Suitable for a sunny day</div>
                 <p>Relaxing horseback riding, <em><strong>suitable for couples and families</strong></em>.</p>
             </div>
-            <div class="recommend"><img src="mall.png" alt="shopping in the mall" width="190px" height="110px">
+            <div class="recommend"><img src="mall.webp" alt="shopping in the mall" width="190" height="110" loading="lazy">
                 <h4>Shopping</h4>
                 <div>Suitable for all weather</div>
                 <p>Shopping center and malls nationwide are always available for you.<em><strong> Suitable for
