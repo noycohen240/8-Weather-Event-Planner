@@ -178,12 +178,10 @@
             border-radius: 3px;
             gap: 15px;
             width: 90%;
-            margin: 50px;
-            padding: 10px;
+            margin: 50px auto;
         }
 
         .more_information h2 {
-            position: relative;
             text-align: center;
             margin-bottom: 20px;
             color: #374151;
@@ -191,22 +189,25 @@
 
         .recommended_activities {
             display: flex;
-            flex-direction: row;
-            justify-items: space-around;
-            height: 400px;
-            width: 300px;
-            margin-right: 500px;
+            justify-content: center;
+            align-items: stretch;
+            gap: 30px;
+            width: 100%;
         }
 
         .recommend {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
             padding: 12px;
             background-color: #eef9eb;
             border-radius: 3px;
             font-size: 0.95rem;
-            margin: 40px;
+            width: 300px;
+            height: 350px;
             border-color: #F2F2F2;
             transform: 0.3s ease;
-            box-shadow: 0.3s ease;
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
         }
 
         .recommend:hover{
@@ -214,14 +215,14 @@
             box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
         }
 
-        .recommend h4 {
-            text-align: center;
-        }
-
         .recommend div {
             background-color: #f9e65a;
             border-radius: 20px;
             text-align: center;
+        }
+
+        .recommend p {
+            padding: 40px;
         }
 
         .activities_link {
@@ -231,6 +232,7 @@
             gap: 6px;
             padding: 12px 22px;
             margin-top: 24px;
+            margin-bottom: 30px;
             background-color: #ffffff;
             color: #6f9f78;
             border: 1.5px solid #6f9f78;
@@ -351,23 +353,24 @@
             }
 
             .more_information {
-                margin: 20px;
+                width: 100%;
+                padding: 0 20px;
             }
 
             .recommended_activities {
                 display: flex;
                 flex-direction: row;
-                justify-items: flex-start;
+                justify-content: center;
+                gap: 30px;
+                width: 100%;
             }
 
             .recommend {
                 display: flex;
                 flex-direction: column;
-                width: 450px;
+                width: 200px;
                 height: 350px;
                 font-size: 1rem;
-                margin: 10px;
-                margin-left: 100px;
             }
 
             .recommend img {
