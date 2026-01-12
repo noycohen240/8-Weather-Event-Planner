@@ -2,7 +2,9 @@
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -17,11 +19,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 15px 5%;
     border-bottom: 1px solid #ccc;
-    color: #1e3a8a;
+    color: #1F3C88;
     background-color: white;
-    position: relative; 
+    position: relative;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -47,7 +50,7 @@ body {
 #activities:hover,
 #about_us:hover,
 #support_accessibility:hover {
-    color: #6FA8A1;
+    color: #5FA8D3;
 }
 
 .actions {
@@ -66,42 +69,57 @@ body.menu_open {
     background-color: white;
 }
 
-
 .moto {
-    width: 90%;
+    width: 100%;
     overflow: hidden;
-    background-color: #fff9c4;
-    border: 0.7px solid #ffecb3;
+    background: linear-gradient(180deg,#3A7CA5 0%, #3F88B3 100%);
+    border-color: #1F3C88;
     border-radius: 3px;
-    padding: 10px;
-    margin: 50px;
-    margin-top: 20px;
+    padding: 15px 0;
+    margin: 0;
     position: relative;
+    box-sizing: border-box;
 }
 
 @keyframes slide {
-    from { transform: translateX(-100%); }
-    to { transform: translateX(100%); }
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
 }
 
 .our_moto {
-    color: #1a237f;
-    font-size: 18px;
+    color: #f1f5f9;
+    font-size: 20px;
     font-weight: bold;
     animation: slide 12s linear infinite;
+    padding-left: 20px;
 }
 
 .last_menu {
     width: 100%;
-    background-color: #f1f5f9;
+    background-color: #F4F9F9;
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.the_last_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .last_menu h3 {
-    color: #1e3a8a;
-    margin-right: 15px;
+    color: #1F3C88;
+    margin: 0 0 15px 0;
 }
 
 .last_menu_list {
@@ -109,36 +127,35 @@ body.menu_open {
     align-items: center;
     list-style: none;
     flex-direction: column;
-    margin: 15px 0 40px;
+    padding: 0;
+    margin: 0 0 30px 0;
     gap: 15px;
+    width: 100%;
 }
 
 .last_menu_list a {
     text-decoration: none;
-    color: #1e3a8a;
-    margin-right: 50px;
+    color: #1F3C88;
+    margin: 0;
+    font-weight: 400;
+}
+
+.last_menu_list a:hover {
+    color: #5FA8D3;
 }
 
 .our_footer {
     text-align: center;
-    margin-bottom: 20px;
-    margin-right: 15px;
-    gap: 10px;
-    color: #1e3a8a;
+    margin: 0;
+    color: #1F3C88;
+    width: 100%;
 }
 
 
 @media (min-width: 319px) and (max-width: 480px) {
-    .moto {
-        width: 90%;
-        margin: 5px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
     .last_menu {
-        width: 96%;
-        margin: 5px;
+        width: 100%;
+        margin: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -148,11 +165,16 @@ body.menu_open {
     }
 
     .the_last_list {
-        margin-right: 45px;
+        width: 100%;
     }
 
     .end_title {
         text-align: center;
+    }
+
+    .last_menu {
+        width: 100%;
+        margin: 0;
     }
 
     .last_menu_list {
@@ -166,16 +188,11 @@ body.menu_open {
 
 @media (min-width: 481px) and (max-width: 1200px) {
     .moto {
-        margin: 20px;
+        margin: 5px;
     }
 
     .menu_list {
         width: 100%;
-    }
-
-    .logo {
-        margin-left: 20px;
-        margin-right: 50px;
     }
 
     .last_menu {
@@ -185,6 +202,7 @@ body.menu_open {
 }
 
 @media (max-width: 700px) {
+
     #home,
     #about_us,
     #activities,
@@ -204,18 +222,18 @@ body.menu_open {
 
     .menu_list {
         position: absolute;
-        top: 100%; 
+        top: 100%;
         left: 0;
         right: 0;
         width: 100%;
-        background-color: #ffffff; 
+        background-color: #ffffff;
         flex-direction: column;
         align-items: stretch;
         gap: 0;
         padding: 0;
         display: none;
-        z-index: 1000; 
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); 
+        z-index: 1000;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     }
 
     .menu_list.active {
@@ -234,7 +252,7 @@ body.menu_open {
         text-align: left;
         color: #1e3a8a;
         font-weight: 600;
-        box-sizing: border-box; 
+        box-sizing: border-box;
     }
 
     .menu_list a:hover {
