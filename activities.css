@@ -313,8 +313,7 @@ body {
 
 .image-placeholder {
     width: 100%;
-    height: 200px;
-    aspect-ratio: 1.6 / 1;
+    height: 60%;
     background-color: beige;
     display: block;
     align-items: center;
