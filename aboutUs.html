@@ -16,10 +16,11 @@
 
         .about_main {
             display: flex;
-            justify-content: center;
-            padding: 28px 0;
-            margin-top: 0;
-            margin-bottom: 64px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 28px 0 18px;
+            margin: 0;
             width: 100%;
             background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.03) 100%);
         }
@@ -66,16 +67,60 @@
             justify-content: center;
             gap: 80px;
             align-items: stretch;
-            padding: 24px 48px;
+            padding: 24px 48px 10px;
             width: 100%;
             box-sizing: border-box;
             max-width: 1300px;
-            padding-bottom: 50px;
         }
 
         .about_title .material-symbols-outlined {
             font-size: 32px;
             color: #1f4aa8;
+        }
+
+        .values {
+            max-width: 1300px;
+            width: 100%;
+            margin: 12px auto 0;
+            padding: 0 48px 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            box-sizing: border-box;
+            justify-items: center;
+        }
+
+        .value_card {
+            background: rgba(255, 255, 255, 0.55);
+            border: 1px solid rgba(31, 74, 168, 0.25);
+            border-radius: 18px;
+            padding: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            width: 100%;
+            max-width: 360px;
+        }
+
+        .value_card .material-symbols-outlined {
+            font-size: 30px;
+            color: #1f4aa8;
+        }
+
+        .value_card h3 {
+            margin: 8px 0 6px;
+            color: #1f4aa8;
+        }
+
+        .value_card p {
+            margin: 0;
+            color: rgba(0, 0, 0, 0.75);
+            line-height: 1.5;
+        }
+
+        @media (max-width: 900px) {
+            .values {
+                grid-template-columns: 1fr;
+                padding: 0 32px;
+            }
         }
     </style>
 
@@ -144,7 +189,28 @@
             </section>
 
         </div>
+
+        <section class="values">
+            <div class="value_card">
+                <span class="material-symbols-outlined">visibility</span>
+                <h3>Clarity</h3>
+                <p>Clear info and clean design that helps you decide fast.</p>
+            </div>
+
+            <div class="value_card">
+                <span class="material-symbols-outlined">accessibility_new</span>
+                <h3>Accessibility</h3>
+                <p>Designed to work well for everyone, on every device.</p>
+            </div>
+
+            <div class="value_card">
+                <span class="material-symbols-outlined">shield</span>
+                <h3>Confidence</h3>
+                <p>Plan with confidence using reliable weather insights.</p>
+            </div>
+        </section>
     </main>
+
 
 
 
