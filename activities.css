@@ -312,13 +312,38 @@ body {
     width: 100%;
     aspect-ratio: 1.6 / 1;
     background-color: beige;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     font-size: 40px;
+    overflow: hidden;
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* הכי חשוב: ממלא את כל הריבוע בלי לעוות את התמונה */
+    display: block;
 }
 
 .card-info {
-    padding: 15px;
+    padding: 20px;
     text-align: center;
+    flex-grow: 1;
+    /* דוחף את התוכן למלא את כל גובה הכרטיסייה */
+}
+
+.card-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.25rem;
+    color: #1e3a8a;
+    text-transform: capitalize;
+    /* הופך אוטומטית את האות הראשונה לגדולה */
+}
+
+.card-info p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #475569;
 }
