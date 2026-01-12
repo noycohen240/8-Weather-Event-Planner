@@ -19,7 +19,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: flex-start;
-            padding: 28px 0 18px;
+            padding: 0px 0;
             margin: 0;
             width: 100%;
             background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.03) 100%);
@@ -27,8 +27,8 @@
 
         .about_box {
             width: 90%;
-            max-width: 600px;
-            border: 2px solid #1f4aa8;
+            max-width: 400px;
+            border: 1.5px solid var(--border);
             border-radius: 28px;
             padding: 24px;
             flex: 1;
@@ -47,11 +47,12 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            color: var(--primary);
         }
 
         .about_divider {
             border: none;
-            border-top: 2px #1f4aa8;
+            border-top: 2px solid var(--soft);
             margin: 18px 0;
         }
 
@@ -59,7 +60,7 @@
             margin: 0;
             font-size: 18px;
             line-height: 1.7;
-            color: rgba(0, 0, 0, 0.85);
+            color: var(--text);
         }
 
         .about_wrapper {
@@ -67,7 +68,7 @@
             justify-content: center;
             gap: 80px;
             align-items: stretch;
-            padding: 24px 48px 10px;
+            padding: 0px 48px 10px;
             width: 100%;
             box-sizing: border-box;
             max-width: 1300px;
@@ -81,23 +82,25 @@
         .values {
             max-width: 1300px;
             width: 100%;
-            margin: 12px auto 0;
-            padding: 0 48px 0;
+            margin: 18px auto 0;
+            padding: 0 48px 20px;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 18px;
+            gap: 78px;
             box-sizing: border-box;
             justify-items: center;
         }
 
         .value_card {
             background: rgba(255, 255, 255, 0.55);
-            border: 1px solid rgba(31, 74, 168, 0.25);
-            border-radius: 18px;
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, .7);
+            border-radius: 10px;
             padding: 16px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
             width: 100%;
-            max-width: 360px;
+            max-width: 500px;
+            min-height: 120px;
         }
 
         .value_card .material-symbols-outlined {
@@ -107,7 +110,8 @@
 
         .value_card h3 {
             margin: 8px 0 6px;
-            color: #1f4aa8;
+            color: var(--primary);
+            font-weight: 700;
         }
 
         .value_card p {
@@ -121,6 +125,66 @@
                 grid-template-columns: 1fr;
                 padding: 0 32px;
             }
+        }
+
+        .testimonials {
+            max-width: 1300px;
+            margin: 60px auto;
+            padding: 0 48px;
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            font-size: 32px;
+            margin-bottom: 32px;
+        }
+
+        .testimonials_grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 28px;
+            border-radius: 22px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .05);
+            font-style: italic;
+        }
+
+        .testimonial span {
+            display: block;
+            margin-top: 12px;
+            font-weight: 600;
+            color: #1f4aa8;
+        }
+
+        .stats {
+            max-width: 1300px;
+            margin: 60px auto 20px;
+            padding: 0 48px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            text-align: center;
+        }
+
+        .stats div {
+            background: white;
+            padding: 28px;
+            border-radius: 22px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .05);
+        }
+
+        .stats b {
+            font-size: 40px;
+            color: #1f4aa8;
+            display: block;
+        }
+
+        .stats span {
+            opacity: .7;
         }
     </style>
 
@@ -211,7 +275,33 @@
         </section>
     </main>
 
+    <section class="stats">
+        <div><b>12,480</b><span>Users</span></div>
+        <div><b>284,930</b><span>Weather Checks</span></div>
+        <div><b>96%</b><span>% Accuracy</span></div>
+    </section>
 
+
+    <section class="testimonials">
+        <h2>What People Say</h2>
+
+        <div class="testimonials_grid">
+            <div class="testimonial">
+                <p>“Any Weather helped me plan my outdoor wedding without stress.”</p>
+                <span>— Sarah, Event Planner</span>
+            </div>
+
+            <div class="testimonial">
+                <p>“I finally feel confident booking outdoor activities.”</p>
+                <span>— Daniel, Hiker</span>
+            </div>
+
+            <div class="testimonial">
+                <p>“The accessibility tools made it easy for my whole family.”</p>
+                <span>— Maya, Parent</span>
+            </div>
+        </div>
+    </section>
 
 
 
