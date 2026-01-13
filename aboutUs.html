@@ -72,52 +72,12 @@
             width: 100%;
             box-sizing: border-box;
             max-width: 1300px;
+            margin-top: 20px;
         }
 
         .about_title .material-symbols-outlined {
             font-size: 32px;
             color: #1f4aa8;
-        }
-
-        .values {
-            max-width: 1300px;
-            width: 100%;
-            margin: 18px auto 0;
-            padding: 0 48px 20px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 78px;
-            box-sizing: border-box;
-            justify-items: center;
-        }
-
-        .value_card {
-            background: rgba(255, 255, 255, 0.55);
-            border: 1px solid var(--border);
-            background: rgba(255, 255, 255, .7);
-            border-radius: 10px;
-            padding: 16px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-            width: 100%;
-            max-width: 500px;
-            min-height: 120px;
-        }
-
-        .value_card .material-symbols-outlined {
-            font-size: 30px;
-            color: #1f4aa8;
-        }
-
-        .value_card h3 {
-            margin: 8px 0 6px;
-            color: var(--primary);
-            font-weight: 700;
-        }
-
-        .value_card p {
-            margin: 0;
-            color: rgba(0, 0, 0, 0.75);
-            line-height: 1.5;
         }
 
         @media (max-width: 900px) {
@@ -210,6 +170,7 @@
             font-weight: 650;
             margin: 18px 0 18px;
             color: var(--primary);
+            gap: 20px;
         }
 
         .features_grid {
@@ -307,6 +268,61 @@
                 opacity: 1;
                 transform: translateY(0);
             }
+        }
+
+        @media (min-width:319px) and (max-width:480px) {
+            .about_wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .data {
+                margin-right: 0;
+                width: 100%;
+                max-width: 100%;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 16px;
+                justify-items: center;
+            }
+
+            .testimonials_grid {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .features,
+            .values,
+            .stats,
+            .testimonials {
+                padding: 0 16px;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+
+            body {
+                overflow-x: hidden;
+            }
+
+        }
+
+        @media (min-width:481px) and (max-width:1200px) {
+            .about_wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+
         }
     </style>
 
@@ -422,25 +438,6 @@
             </div>
         </section>
 
-        <section class="values">
-            <div class="value_card fade-in">
-                <span class="material-symbols-outlined">visibility</span>
-                <h3>Clarity</h3>
-                <p>Clear info and clean design that helps you decide fast.</p>
-            </div>
-
-            <div class="value_card fade-in">
-                <span class="material-symbols-outlined">accessibility_new</span>
-                <h3>Accessibility</h3>
-                <p>Designed to work well for everyone, on every device.</p>
-            </div>
-
-            <div class="value_card fade-in">
-                <span class="material-symbols-outlined">shield</span>
-                <h3>Confidence</h3>
-                <p>Plan with confidence using reliable weather insights.</p>
-            </div>
-        </section>
     </main>
 
     <h2 class="stats_title">Our Impact</h2>
@@ -450,6 +447,7 @@
         <div><b>284,930</b><span>Weather Checks</span></div>
         <div><b>96%</b><span>% Accuracy</span></div>
     </section>
+
 
 
     <section class="testimonials fade-in">
