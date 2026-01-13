@@ -188,6 +188,7 @@ body.menu_open {
 
 @media (min-width: 481px) and (max-width: 1200px) {
     .moto {
+        width: 98%;
         margin: 5px;
     }
 
