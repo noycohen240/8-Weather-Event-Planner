@@ -279,17 +279,34 @@
         .about_box,
         .value_card,
         .stats div,
-        .testimonial {
+        .testimonial,
+        .feature_card {
             transition: transform 0.25s ease, box-shadow 0.25s ease;
             cursor: pointer;
         }
 
+
         .about_box:hover,
         .value_card:hover,
         .stats div:hover,
-        .testimonial:hover {
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+        .testimonial:hover,
+        .feature_card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.14);
+        }
+
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 0.9s ease forwards;
+        }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 
@@ -335,17 +352,21 @@
     <main class="about_main">
         <div class="about_wrapper">
             <section class="about_box">
-                <h2 class="about_title"><span class="material-symbols-outlined">info</span>
-                    About Us</h2>
-                <hr class="about_divider">
-                <p class="about_text">Any Weather is a smart platform designed to help people plan outdoor activities
-                    with confidence.
-                    We bring together weather data, accessibility tools, and easy-to-use features so everyone can enjoy
-                    events without stress.
-                    Whether it's sunny, windy, or rainy — we help you choose the right time and place.</p>
+                <div class="fade-in">
+                    <h2 class="about_title"><span class="material-symbols-outlined">info</span>
+                        About Us</h2>
+                    <hr class="about_divider">
+                    <p class="about_text">Any Weather is a smart platform designed to help people plan outdoor
+                        activities
+                        with confidence.
+                        We bring together weather data, accessibility tools, and easy-to-use features so everyone can
+                        enjoy
+                        events without stress.
+                        Whether it's sunny, windy, or rainy — we help you choose the right time and place.</p>
+                </div>
             </section>
 
-            <section class="about_box">
+            <section class="about_box fade-in">
                 <h2 class="about_title"><span class="material-symbols-outlined">flag</span>
                     Our Mission</h2>
                 <hr class="about_divider">
@@ -362,7 +383,7 @@
             <h2 class="features_title">Why Any Weather?</h2>
 
             <div class="features_grid">
-                <div class="feature_card">
+                <div class="feature_card fade-in">
                     <div class="feature_icon">
                         <span class="material-symbols-outlined">schedule</span>
                     </div>
@@ -370,7 +391,7 @@
                     <p>Pick the best time in seconds with clear weather guidance.</p>
                 </div>
 
-                <div class="feature_card">
+                <div class="feature_card fade-in">
                     <div class="feature_icon">
                         <span class="material-symbols-outlined">insights</span>
                     </div>
@@ -378,7 +399,7 @@
                     <p>Understand wind, rain, and comfort level at a glance.</p>
                 </div>
 
-                <div class="feature_card">
+                <div class="feature_card fade-in">
                     <div class="feature_icon">
                         <span class="material-symbols-outlined">notifications</span>
                     </div>
@@ -386,7 +407,7 @@
                     <p>Get warnings for sudden changes before you go outside.</p>
                 </div>
 
-                <div class="feature_card">
+                <div class="feature_card fade-in">
                     <div class="feature_icon">
                         <span class="material-symbols-outlined">location_on</span>
                     </div>
@@ -397,19 +418,19 @@
         </section>
 
         <section class="values">
-            <div class="value_card">
+            <div class="value_card fade-in">
                 <span class="material-symbols-outlined">visibility</span>
                 <h3>Clarity</h3>
                 <p>Clear info and clean design that helps you decide fast.</p>
             </div>
 
-            <div class="value_card">
+            <div class="value_card fade-in">
                 <span class="material-symbols-outlined">accessibility_new</span>
                 <h3>Accessibility</h3>
                 <p>Designed to work well for everyone, on every device.</p>
             </div>
 
-            <div class="value_card">
+            <div class="value_card fade-in">
                 <span class="material-symbols-outlined">shield</span>
                 <h3>Confidence</h3>
                 <p>Plan with confidence using reliable weather insights.</p>
@@ -419,14 +440,14 @@
 
     <h2 class="stats_title">Our Impact</h2>
 
-    <section class="stats">
+    <section class="stats fade-in">
         <div><b>12,480</b><span>Users</span></div>
         <div><b>284,930</b><span>Weather Checks</span></div>
         <div><b>96%</b><span>% Accuracy</span></div>
     </section>
 
 
-    <section class="testimonials">
+    <section class="testimonials fade-in">
         <h2>What People Say</h2>
 
         <div class="testimonials_grid">
@@ -435,12 +456,12 @@
                 <span>— Sarah, Event Planner</span>
             </div>
 
-            <div class="testimonial">
+            <div class="testimonial fade-in">
                 <p>“I finally feel confident booking outdoor activities.”</p>
                 <span>— Daniel, Hiker</span>
             </div>
 
-            <div class="testimonial">
+            <div class="testimonial fade-in">
                 <p>“The accessibility tools made it easy for my whole family.”</p>
                 <span>— Maya, Parent</span>
             </div>
