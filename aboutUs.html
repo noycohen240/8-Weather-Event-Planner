@@ -14,6 +14,18 @@
             font-family: 'Nunito', sans-serif;
         }
 
+        @property --scale {
+            syntax: "<number>";
+            inherits: true;
+            initial-value: 1;
+        }
+
+        @property --ty {
+            syntax: "<length>";
+            inherits: true;
+            initial-value: 0px;
+        }
+
         .about_main {
             display: flex;
             flex-direction: column;
@@ -35,7 +47,6 @@
             min-height: 320px;
             background: rgba(255, 255, 255, 0.65);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
             backdrop-filter: blur(4px);
 
         }
@@ -184,13 +195,7 @@
             border: 1px solid var(--border);
             border-radius: 18px;
             padding: 18px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .feature_card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.10);
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.14);
         }
 
         .feature_icon {
@@ -242,9 +247,12 @@
         .stats div,
         .testimonial,
         .feature_card {
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
-            cursor: pointer;
+            transform: translate3d(0, 0, 0);
+            transition: transform 280ms cubic-bezier(.2, .8, .2, 1), box-shadow 280ms ease;
+            will-change: transform;
+            backface-visibility: hidden;
         }
+
 
 
         .about_box:hover,
@@ -252,21 +260,20 @@
         .stats div:hover,
         .testimonial:hover,
         .feature_card:hover {
-            transform: scale(1.05);
+            transform: translate3d(0, -6px, 0) scale(1.03);
             box-shadow: 0 18px 45px rgba(0, 0, 0, 0.14);
         }
 
-
         .fade-in {
             opacity: 0;
-            transform: translateY(30px);
+            --ty: 30px;
             animation: fadeUp 0.9s ease forwards;
         }
 
         @keyframes fadeUp {
             to {
                 opacity: 1;
-                transform: translateY(0);
+                --ty: 0px;
             }
         }
 
