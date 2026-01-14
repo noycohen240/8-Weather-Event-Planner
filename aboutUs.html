@@ -129,7 +129,7 @@
 
         .stats {
             max-width: 1300px;
-            margin: 50px auto 40px;
+            margin: 50px auto 10px;
             padding: 0 48px;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -165,7 +165,7 @@
             text-align: center;
             font-size: 30px;
             font-weight: 700;
-            margin: 30px 0 10px;
+            margin: 30px 0 0px;
             color: #4f9c6b;
             letter-spacing: 0.5px;
         }
@@ -341,22 +341,31 @@
         .testimonial p {
             color: #000;
         }
+
+        .material-symbols-outlined {
+            display: inline-block;
+            width: 1.1em;
+            height: 1.1em;
+            line-height: 1.1em;
+        }
+
     </style>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
+    <link rel="preload"
         href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Quicksand:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" media="print"
-        onload="this.media='all'" />
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Quicksand:wght@400;500;600;700&display=swap">
     </noscript>
 
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="stylesheet" href="About.css">
+
 </head>
 
 <body>
