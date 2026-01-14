@@ -45,10 +45,9 @@
             padding: 24px;
             flex: 1;
             min-height: 320px;
-            background: #ffffff(255, 255, 255, 0.65);
+            background: #ffffff;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             backdrop-filter: blur(4px);
-
         }
 
         .about_title {
@@ -108,7 +107,7 @@
         .testimonials h2 {
             font-size: 30px;
             margin-bottom: 32px;
-             color: #4f9c6b;
+            color: #4f9c6b;
         }
 
         .testimonials_grid {
@@ -155,15 +154,21 @@
             display: block;
         }
 
+        .feature_card h3,
         .stats span {
-            color: #ffe066;
-            opacity: .7;
+            display: inline-block;
+            background: #ffe066;
+            color: #000;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-weight: 700;
+            line-height: 1.1;
         }
 
         .stats_title {
             text-align: center;
             font-size: 30px;
-            font-weight: 650;
+            font-weight: 700;
             margin: 30px 0 10px;
             color: #4f9c6b;
             letter-spacing: 0.5px;
@@ -181,7 +186,7 @@
         .features_title {
             text-align: center;
             font-size: 30px;
-            font-weight: 650;
+            font-weight: 700;
             margin: 18px 0 48px;
             color: #4f9c6b;
             gap: 20px;
@@ -194,8 +199,8 @@
         }
 
         .feature_card {
-            background: #ffffff(255, 255, 255, 0.75);
-            border: 1px solid var(--border);
+            background: #ffffff;
+            border: none;
             border-radius: 18px;
             padding: 18px;
             box-shadow: 0 18px 45px rgba(0, 0, 0, 0.14);
@@ -207,7 +212,8 @@
             border-radius: 12px;
             display: grid;
             place-items: center;
-            background: rgba(31, 74, 168, 0.10);
+            background: rgba(31, 74, 168, 0.08);
+            border: 2px solid #1f4aa8;
             margin-bottom: 10px;
         }
 
@@ -216,11 +222,15 @@
             font-size: 26px;
         }
 
+        .feature_card:hover .feature_icon {
+            background: rgba(31, 74, 168, 0.12);
+            box-shadow: 0 0 0 3px rgba(31, 74, 168, 0.15);
+        }
+
         .feature_card h3 {
             margin: 6px 0 6px;
             font-size: 18px;
             font-weight: 700;
-            color: #ffe066;
         }
 
         .feature_card p {
@@ -255,8 +265,6 @@
             will-change: transform;
             backface-visibility: hidden;
         }
-
-
 
         .about_box:hover,
         .value_card:hover,
@@ -321,7 +329,6 @@
             body {
                 overflow-x: hidden;
             }
-
         }
 
         @media (min-width:481px) and (max-width:1200px) {
@@ -332,7 +339,11 @@
                 align-items: center;
                 gap: 20px;
             }
-
+        }
+    
+        .feature_card p,
+        .testimonial p {
+            color: #000;
         }
     </style>
 
@@ -461,22 +472,22 @@
 
 
     <section class="testimonials fade-in">
-        <h2>What People Say</h2>
+        <h2>Testimonials</h2>
 
         <div class="testimonials_grid">
             <div class="testimonial">
                 <p>“Any Weather helped me plan my outdoor wedding without stress.”</p>
-                <span>— Sarah, Event Planner</span>
+                <span>Sarah Miller, Event Planner</span>
             </div>
 
             <div class="testimonial fade-in">
                 <p>“I finally feel confident booking outdoor activities.”</p>
-                <span>— Daniel, Hiker</span>
+                <span>Daniel Cohen, Hiker</span>
             </div>
 
             <div class="testimonial fade-in">
                 <p>“The accessibility tools made it easy for my whole family.”</p>
-                <span>— Maya, Parent</span>
+                <span>Maya Levy, Parent</span>
             </div>
         </div>
     </section>
