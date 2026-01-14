@@ -83,11 +83,11 @@ body.menu_open {
 
 @keyframes slide {
     from {
-        transform: translateX(100%);
+        transform: translateX(0);
     }
 
     to {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 
@@ -98,9 +98,9 @@ body.menu_open {
     color: #f1f5f9;
     font-size: 20px;
     font-weight: bold;
-    animation: slide 12s linear infinite;
+    width: fit-content;
+    animation: slide 20s linear infinite;
     padding-left: 20px;
-
 }
 
 
