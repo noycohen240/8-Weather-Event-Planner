@@ -92,12 +92,17 @@ body.menu_open {
 }
 
 .our_moto {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
     color: #f1f5f9;
     font-size: 20px;
     font-weight: bold;
     animation: slide 12s linear infinite;
     padding-left: 20px;
+
 }
+
 
 .last_menu {
     width: 100%;
