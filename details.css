@@ -272,18 +272,17 @@ body.menu_open {
     min-width: 300px;
 }
 
-/* --- CSS for the MAIN activity card (Right Column) --- */
-/* --- CSS המעודכן לכרטיסייה הראשית (צד ימין) --- */
 .activity-card {
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     background-color: #ffffff;
-    height: auto; /* שינוי: הגובה יתאים לתוכן באופן אוטומטי */
-    max-height: none; /* שינוי: ביטול הגבלת הגובה המקסימלי */
-    overflow-y: visible; /* שינוי: ביטול הגלילה */
+    height: auto; /* שונה מ-100% */
+    max-height: none; /* שונה מ-550px */
+    overflow-y: visible; /* שונה מ-auto */
 }
+
 
 
 .activity-card h2 {
@@ -299,8 +298,10 @@ body.menu_open {
     height: auto;
     border-radius: 8px;
     margin-bottom: 15px;
-    background-color: #f0f0f0; /* Placeholder color */
+    background-color: #f0f0f0;
+    content-visibility: auto; /* הוסף את השורה הזו לשיפור ביצועים */
 }
+
 
 .activity-card p {
     font-family: 'Quicksand', sans-serif;
