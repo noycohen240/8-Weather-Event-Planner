@@ -11,8 +11,11 @@ h3 {
 body {
     font-family: 'Nunito', sans-serif;
     margin: 0px;
-    background-color: #f7fdf9;
-    transition: 0.3s;
+    background: linear-gradient(180deg,
+            #ffffff 0%,
+            #f8fafc 30%,
+            #bae6fd 90%,
+            #7dd3fc 100%)
 }
 
 .header {
@@ -66,7 +69,7 @@ body {
 }
 
 body.menu_open {
-    background-color: white;
+    background: none;
 }
 
 .moto {
@@ -279,8 +282,8 @@ body.menu_open {
 #daySelect {
     padding: 10px;
     border-radius: 5px;
-    border: 3px solid #617dd8;
-    background-color: rgba(170, 197, 212, 0.973);
+    border: 3px solid #4f9c6b;
+    background-color: white;
     font-family: inherit;
     cursor: pointer;
 }
@@ -293,30 +296,27 @@ body.menu_open {
 
 .activities-grid {
     display: grid;
-    /* יצירת טורים גמישים: מינימום 250px, מקסימום חלק שווה מהמרחב */
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-
-    /* מרווח בין השורות (60px) ובין הטורים (25px) */
-    gap: 60px 25px;
-
-    /* מירכוז הגריד כולו בדף */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px 50px;
     justify-content: center;
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 0 20px;
+    max-width: 1600px;
+    margin: 60px auto;
 }
 
+
 .activity-card {
-    background: rgba(170, 197, 212, 0.973);
-    border-radius: 15px;
-    border: 1px solid beige;
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #4f9c6b;
     overflow: hidden;
     transition: all 0.3s ease;
     display: flex;
-    height: 300px;
+    height: 350px;
+    width: 400px; 
     flex-direction: column;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     cursor: pointer;
+    max-width: 280px;
 }
 
 .activity-card:hover {
@@ -327,12 +327,12 @@ body.menu_open {
 
 .image-placeholder {
     width: 100%;
-    height: 60%;
+    height: 280px;
     background-color: beige;
     display: block;
     align-items: center;
     justify-content: center;
-    font-size: 40px;
+    font-size: 50px;
     overflow: hidden;
 }
 
@@ -352,14 +352,14 @@ body.menu_open {
 .card-info h3 {
     margin: 0 0 10px 0;
     font-size: 1.25rem;
-    color: #1e3a8a;
+    color: #4f9c6b;
     text-transform: capitalize;
     /* הופך אוטומטית את האות הראשונה לגדולה */
 }
 
 .card-info p {
     margin: 0;
-    font-size: 0.95rem;
+    font-size: 1.15rem;
     color: #475569;
 }
 
