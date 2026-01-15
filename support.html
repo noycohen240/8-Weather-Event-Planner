@@ -13,7 +13,7 @@
 
 
 <style>
-  html{
+  html {
     font-family: 'Nunito', sans-serif;
   }
 </style>
@@ -51,72 +51,75 @@
     </div>
   </header>
 
-   <div class="moto">
-        <div class="our_moto">
-            <div class="moto_content">
-                <div class="the_moto">No Matter The Weather.</div>
-                <div class="the_moto">No Matter The Weather.</div>
-                <div class="the_moto">No Matter The Weather.</div>
-                <div class="the_moto">No Matter The Weather.</div>
-                <div class="the_moto">No Matter The Weather.</div>
-                <div class="the_moto">No Matter The Weather.</div>
-            </div>
+  <div class="moto">
+    <div class="our_moto">
+      <div class="moto_content">
+        <div class="the_moto">No Matter The Weather.</div>
+        <div class="the_moto">No Matter The Weather.</div>
+        <div class="the_moto">No Matter The Weather.</div>
+        <div class="the_moto">No Matter The Weather.</div>
+        <div class="the_moto">No Matter The Weather.</div>
+        <div class="the_moto">No Matter The Weather.</div>
+      </div>
 
-            <div class="moto_content">
-                <div class="the_moto">No Matter The Weather.</div>
-                <div class="the_moto">No Matter The Weather.</div>
-                <div class="the_moto">No Matter The Weather.</div>
-                <div class="the_moto">No Matter The Weather.</div>
-                <div class="the_moto">No Matter The Weather.</div>
-                <div class="the_moto">No Matter The Weather.</div>
-            </div>
-        </div>
+      <div class="moto_content">
+        <div class="the_moto">No Matter The Weather.</div>
+        <div class="the_moto">No Matter The Weather.</div>
+        <div class="the_moto">No Matter The Weather.</div>
+        <div class="the_moto">No Matter The Weather.</div>
+        <div class="the_moto">No Matter The Weather.</div>
+        <div class="the_moto">No Matter The Weather.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Start of Support & Accessibility Section -->
+  <main class="support-and-accessibility-content">
+
+
+    <div class="content-box">
+      <section id="accessibility-statement" class="accessibility-section">
+        <h2 style="color: #4f9c6b">Accessibility</h2>
+        <p>We believe that everyone deserves the right to live with dignity, equality, comfort, and independence.
+          Therefore, we invest significant resources to ensure our website is as accessible as possible for people with
+          disabilities.</p>
     </div>
 
-<!-- Start of Support & Accessibility Section -->
-<main class="support-and-accessibility-content">
 
-  
-  <div class="content-box">
-    <section id="accessibility-statement" class="accessibility-section">
-      <h2 style="color: #4f9c6b">Accessibility</h2>
-      <p>We believe that everyone deserves the right to live with dignity, equality, comfort, and independence. Therefore, we invest significant resources to ensure our website is as accessible as possible for people with disabilities.</p>
-  </div>
+    <div class="content-box">
+      <section id="contact-support" class="support-section">
+        <h2 style="color: #4f9c6b">Contact Support</h2>
+        <p>Encountered an issue? Our team is here to help. Fill out the form, and we'll get back to you as soon as
+          possible.</p>
+        <form id="supportForm" class="contact-form">
+          <div class="form-group">
+            <label for="user-name">Full Name:</label>
+            <input type="text" id="user-name" name="userName" required placeholder="Israel Israeli">
+          </div>
+          <div class="form-group">
+            <label for="user-email">Email Address:</label>
+            <input type="email" id="user-email" name="userEmail" required required placeholder="You@gmail.com">
+          </div>
+          <div class="form-group">
+            <label for="support-subject">Subject:</label>
+            <input type="text" id="support-subject" name="supportSubject" required>
+          </div>
+          <div class="form-group">
+            <label for="support-message">Message:</label>
+            <textarea id="support-message" name="supportMessage" rows="6" required></textarea>
+          </div>
 
-  
-  <div class="content-box">
-    <section id="contact-support" class="support-section">
-      <h2 style="color: #4f9c6b">Contact Support</h2>
-      <p>Encountered an issue? Our team is here to help. Fill out the form, and we'll get back to you as soon as possible.</p>
-      <form id="supportForm" class="contact-form">
-        <div class="form-group">
-          <label for="user-name">Full Name:</label>
-          <input type="text" id="user-name" name="userName" required placeholder="Israel Israeli">
-        </div>
-        <div class="form-group">
-          <label for="user-email">Email Address:</label>
-          <input type="email" id="user-email" name="userEmail" required required placeholder="You@gmail.com">
-        </div>
-        <div class="form-group">
-          <label for="support-subject">Subject:</label>
-          <input type="text" id="support-subject" name="supportSubject" required>
-        </div>
-        <div class="form-group">
-          <label for="support-message">Message:</label>
-          <textarea id="support-message" name="supportMessage" rows="6" required></textarea>
-        </div>
-        
-        
-        <div class="form-buttons">
-          <button type="submit" class="submit-button">Submit Request</button>
-          <button type="reset" class="clear-button">Clear Form</button>
-        </div>
-      </form>
-    </section>
-  </div>
 
-</main>
-<!-- End of Support & Accessibility Section -->
+          <div class="form-buttons">
+            <button type="submit" class="submit-button">Submit Request</button>
+            <button type="reset" class="clear-button">Clear Form</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+  </main>
+  <!-- End of Support & Accessibility Section -->
 
   <div class="last_menu">
     <div class="the_last_list">
@@ -133,6 +136,29 @@
     </div>
   </div>
 
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz0g2QX3NWh0T1gTQkEZrGtrOboQjcx-8JgFlZO8N8cYWqk6VxJpz0auuFgyTOAb9ln/exec';
+    const form = document.getElementById('supportForm');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+
+      const submitBtn = form.querySelector('.submit-button');
+      submitBtn.disabled = true;
+      submitBtn.innerText = 'Sending...';
+
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          alert('Success! Your request has been saved to Excel.');
+          form.reset();
+        })
+        .catch(error => alert('Error: ' + error.message))
+        .finally(() => {
+          submitBtn.disabled = false;
+          submitBtn.innerText = 'Submit Request';
+        });
+    });
+  </script>
 
 </body>
 
