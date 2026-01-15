@@ -1,5 +1,5 @@
 // 1. הקישור שקיבלת מגוגל (בשלב ה-Deployment)
-const scriptURL = 'הדבק_כאן_את_הקישור_שלך_מגוגל';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbz0g2QX3NWh0T1gTQkEZrGtrOboQjcx-8JgFlZO8N8cYWqk6VxJpz0auuFgyTOAb9ln/exec';
 
 // 2. גישה לאלמנטים בטופס
 const form = document.getElementById('supportForm');
