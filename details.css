@@ -371,3 +371,60 @@ body.menu_open {
 }
 
 /* --- END OF NEW LAYOUT AND CARDS CSS --- */
+
+/* --- תוספת רספונסיביות --- */
+
+/* מונע גלילה לצדדים במובייל */
+body {
+    overflow-x: hidden;
+}
+
+/* התאמה למובייל (טלפונים) */
+@media (max-width: 768px) {
+    /* הופך את העמודות לשורות - אחת מתחת לשנייה */
+    .activities-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .side-activities, .main-activity {
+        width: 100%;
+        flex: none;
+        min-width: unset;
+    }
+
+    /* מעלה את הפעילות הראשית (קטיף תותים) לראש הדף במובייל */
+    .main-activity {
+        order: -1;
+    }
+
+    /* התאמת הלוגו והתפריט */
+    .logo {
+        height: 60px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu_list {
+        display: none; /* מסתיר את התפריט הרגיל במובייל */
+    }
+}
+
+/* התאמה לטאבלטים */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .activities-container {
+        gap: 15px;
+    }
+    
+    .main-activity {
+        flex: 1.5;
+    }
+}
+
+/* וידוא שתמונות לא חורגות מהמסך */
+img {
+    max-width: 100%;
+    height: auto;
+}
