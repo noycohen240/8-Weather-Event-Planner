@@ -316,7 +316,7 @@ body.menu_open {
     text-align: center;
     margin-top: 20px;
     padding: 10px 15px;
-    background-color: #d9534f;
+    background-color: #c62828;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -356,7 +356,7 @@ body.menu_open {
 .preview-card .read-more-btn {
     display: inline-block;
     padding: 8px 16px;
-    background-color: #5c9ce5;
+    background-color: #27794f;
     color: white;
     text-decoration: none;
     border-radius: 4px;
