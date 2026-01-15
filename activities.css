@@ -11,11 +11,8 @@ h3 {
 body {
     font-family: 'Nunito', sans-serif;
     margin: 0px;
-    background: linear-gradient(180deg,
-            #ffffff 0%,
-            #f8fafc 30%,
-            #bae6fd 90%,
-            #7dd3fc 100%)
+    background-color:#f7fdf9;
+    transition: 0.3s;
 }
 
 .header {
