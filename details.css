@@ -273,17 +273,18 @@ body.menu_open {
 }
 
 /* --- CSS for the MAIN activity card (Right Column) --- */
+/* --- CSS המעודכן לכרטיסייה הראשית (צד ימין) --- */
 .activity-card {
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     background-color: #ffffff;
-    height: 100%;
-
-    max-height: 550px;
-    overflow-y: auto;
+    height: auto; /* שינוי: הגובה יתאים לתוכן באופן אוטומטי */
+    max-height: none; /* שינוי: ביטול הגבלת הגובה המקסימלי */
+    overflow-y: visible; /* שינוי: ביטול הגלילה */
 }
+
 
 .activity-card h2 {
     font-family: 'Raleway', sans-serif;
