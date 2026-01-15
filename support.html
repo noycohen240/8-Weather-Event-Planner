@@ -136,29 +136,6 @@
     </div>
   </div>
 
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbz0g2QX3NWh0T1gTQkEZrGtrOboQjcx-8JgFlZO8N8cYWqk6VxJpz0auuFgyTOAb9ln/exec';
-    const form = document.getElementById('supportForm');
-
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-
-      const submitBtn = form.querySelector('.submit-button');
-      submitBtn.disabled = true;
-      submitBtn.innerText = 'Sending...';
-
-      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => {
-          alert('Success! Your request has been saved to Excel.');
-          form.reset();
-        })
-        .catch(error => alert('Error: ' + error.message))
-        .finally(() => {
-          submitBtn.disabled = false;
-          submitBtn.innerText = 'Submit Request';
-        });
-    });
-  </script>
 
 </body>
 
