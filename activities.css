@@ -11,7 +11,7 @@ h3 {
 body {
     font-family: 'Nunito', sans-serif;
     margin: 0px;
-    background-color:#f7fdf9;
+    background-color: #f7fdf9;
     transition: 0.3s;
 }
 
@@ -222,15 +222,55 @@ body.menu_open {
         background-color: transparent;
         padding: 0;
     }
+
+    .hamburger {
+        display: block;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    .menu_list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: #ffffff;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 0;
+        display: none;
+        z-index: 1000;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu_list.active {
+        display: flex;
+    }
+
+    .menu_list li {
+        width: 100%;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .menu_list a {
+        display: block;
+        width: 100%;
+        padding: 15px 20px;
+        text-align: left;
+        color: #1e3a8a;
+        font-weight: 600;
+        box-sizing: border-box;
+    }
+
+    .menu_list a:hover {
+        background-color: #f1f5f9;
+    }
 }
 
-.hamburger {
-    display: block;
-}
-
-.logo {
-    margin-left: 0;
-}
 
 .selection-area {
     width: 100%;
@@ -302,23 +342,23 @@ body.menu_open {
 
 
 .activity-card {
-    background: #ffffff;
+    background-color: #f6fbf8;
     border-radius: 16px;
-    border: 1px solid #4f9c6b;
+    border: 1px solid #e2efe7;
     overflow: hidden;
     transition: all 0.3s ease;
     display: flex;
     height: 350px;
-    width: 400px; 
+    width: 400px;
     flex-direction: column;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
     cursor: pointer;
     max-width: 280px;
 }
 
 .activity-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
+    box-shadow: 0 12px 25px rgba(30, 58, 138, 0.3);
     border-color: #1e3a8a;
 }
 
@@ -358,43 +398,4 @@ body.menu_open {
     margin: 0;
     font-size: 1.15rem;
     color: #475569;
-}
-
-.menu_list {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    width: 100%;
-    background-color: #ffffff;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
-    padding: 0;
-    display: none;
-    z-index: 1000;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-}
-
-.menu_list.active {
-    display: flex;
-}
-
-.menu_list li {
-    width: 100%;
-    border-bottom: 1px solid #e5e7eb;
-}
-
-.menu_list a {
-    display: block;
-    width: 100%;
-    padding: 15px 20px;
-    text-align: left;
-    color: #1e3a8a;
-    font-weight: 600;
-    box-sizing: border-box;
-}
-
-.menu_list a:hover {
-    background-color: #f1f5f9;
 }
