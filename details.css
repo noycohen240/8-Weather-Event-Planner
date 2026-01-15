@@ -268,30 +268,30 @@ body.menu_open {
     }
 }
 
-/* --- START OF NEW LAYOUT AND CARDS CSS --- */
 
-/* Main container for the two-column layout */
+
+
 .activities-container {
     display: flex;
-    flex-wrap: wrap; /* Allows columns to stack on small screens */
+    flex-wrap: wrap; 
     padding: 20px;
-    gap: 30px; /* Space between the columns */
+    gap: 30px; 
     max-width: 1200px;
     margin: 20px auto;
 }
 
-/* Left column for the small preview cards */
+
 .side-activities {
-    flex: 1; /* Takes up 1 part of the available space */
-    min-width: 280px; /* Minimum width before stacking */
+    flex: 1; 
+    min-width: 280px; 
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Space between the small cards */
+    gap: 20px; 
 }
 
-/* Right column for the main activity card */
+
 .main-activity {
-    flex: 2; /* Takes up 2 parts of the space (wider) */
+    flex: 2; 
     min-width: 300px;
 }
 
@@ -301,9 +301,9 @@ body.menu_open {
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     background-color: #ffffff;
-    height: auto; /* שונה מ-100% */
-    max-height: none; /* שונה מ-550px */
-    overflow-y: visible; /* שונה מ-auto */
+    height: auto; 
+    max-height: none; 
+    overflow-y: visible; 
 }
 
 
@@ -319,7 +319,7 @@ body.menu_open {
 .activity-card img, .preview-card img {
     width: 100%;
     height: auto;
-    aspect-ratio: attr(width) / attr(height); /* השורה הזו פותרת את הבעיה! */
+    aspect-ratio: attr(width) / attr(height); 
     display: block;
 }
 
@@ -351,7 +351,7 @@ body.menu_open {
     background-color: #c9302c;
 }
 
-/* --- CSS for the SMALL preview cards (Left Column) --- */
+
 .preview-card {
     border: 1px solid #e0e0e0;
     border-radius: 8px;
@@ -392,18 +392,14 @@ body.menu_open {
     background-color: #4a8ad4;
 }
 
-/* --- END OF NEW LAYOUT AND CARDS CSS --- */
 
-/* --- תוספת רספונסיביות --- */
-
-/* מונע גלילה לצדדים במובייל */
 body {
     overflow-x: hidden;
 }
 
-/* התאמה למובייל (טלפונים) */
+
 @media (max-width: 768px) {
-    /* הופך את העמודות לשורות - אחת מתחת לשנייה */
+    
     .activities-container {
         flex-direction: column;
         padding: 10px;
@@ -415,14 +411,14 @@ body {
         min-width: unset;
     }
 
-    /* מעלה את הפעילות הראשית (קטיף תותים) לראש הדף במובייל */
+    
     .main-activity {
         order: -1;
     }
 
 }
 
-/* התאמה לטאבלטים */
+
 @media (min-width: 769px) and (max-width: 1024px) {
     .activities-container {
         gap: 15px;
@@ -433,7 +429,7 @@ body {
     }
 }
 
-/* וידוא שתמונות לא חורגות מהמסך */
+
 img {
     max-width: 100%;
     height: auto;
