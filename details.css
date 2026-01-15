@@ -243,7 +243,30 @@ body.menu_open {
         padding: 0;
         display: none;
         z-index: 1000;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }}
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+    .menu_list.active {
+        display: flex;
+    }
+
+    .menu_list li {
+        width: 100%;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .menu_list a {
+        display: block;
+        width: 100%;
+        padding: 15px 20px;
+        text-align: left;
+        color: #1e3a8a;
+        font-weight: 600;
+        box-sizing: border-box;
+    }
+
+    .menu_list a:hover {
+        background-color: #f1f5f9;
+    }
+}
 
 /* --- START OF NEW LAYOUT AND CARDS CSS --- */
 
@@ -397,18 +420,6 @@ body {
         order: -1;
     }
 
-    /* התאמת הלוגו והתפריט */
-    .logo {
-        height: 60px;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .menu_list {
-        display: none; /* מסתיר את התפריט הרגיל במובייל */
-    }
 }
 
 /* התאמה לטאבלטים */
