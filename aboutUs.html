@@ -5,21 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <meta name="description"
+        content="Any Weather helps you plan outdoor activities with confidence using clear weather insights and accessibility tools.">
+
     <style>
         html {
             font-family: 'Nunito', sans-serif;
         }
 
-        @property --scale {
-            syntax: "<number>";
-            inherits: true;
-            initial-value: 1;
-        }
-
-        @property --ty {
-            syntax: "<length>";
-            inherits: true;
-            initial-value: 0px;
+        :root {
+            --border: #d9e2dc;
+            --soft: #e7f0ea;
+            --text: #111;
+            --primary: #1f4aa8;
         }
 
         .about_main {
@@ -43,7 +41,6 @@
             min-height: 320px;
             background: #ffffff;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-            backdrop-filter: blur(4px);
         }
 
         .about_title {
@@ -95,14 +92,14 @@
 
         .testimonials {
             max-width: 1300px;
-            margin: 60px auto;
+            margin: 0 auto 60px;
             padding: 0 48px;
             text-align: center;
         }
 
         .testimonials h2 {
             font-size: 30px;
-            margin-bottom: 32px;
+            margin: 0 0 32px;
             color: #4f9c6b;
         }
 
@@ -129,7 +126,7 @@
 
         .stats {
             max-width: 1300px;
-            margin: 50px auto 10px;
+            margin: 0 auto 60px;
             padding: 0 48px;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -165,10 +162,11 @@
             text-align: center;
             font-size: 30px;
             font-weight: 700;
-            margin: 30px 0 0px;
+            margin: 60px 0 32px;
             color: #4f9c6b;
             letter-spacing: 0.5px;
         }
+
 
         .features {
             max-width: 1300px;
@@ -267,14 +265,21 @@
         .stats div:hover,
         .testimonial:hover,
         .feature_card:hover {
-            transform: translate3d(0, -6px, 0) scale(1.03);
-            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.14);
+            box-shadow: none !important;
+            transform: translate3d(0, -6px, 0) scale(1.03) !important;
         }
 
         .fade-in {
-            opacity: 0;
-            --ty: 30px;
-            animation: fadeUp 0.9s ease forwards;
+            opacity: 1;
+            transform: translateY(18px);
+            animation: fadeMove 0.6s ease forwards;
+            will-change: transform;
+        }
+
+        @keyframes fadeMove {
+            to {
+                transform: translateY(0);
+            }
         }
 
         @keyframes fadeUp {
@@ -349,6 +354,13 @@
             line-height: 1.1em;
         }
 
+        .about_box:hover,
+        .feature_card:hover,
+        .stats div:hover,
+        .testimonial:hover {
+            box-shadow: none !important;
+            transform: translate3d(0, -6px, 0) scale(1.03) !important;
+        }
     </style>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -361,8 +373,6 @@
         <link rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Quicksand:wght@400;500;600;700&display=swap">
     </noscript>
-
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="stylesheet" href="About.css">
 
@@ -371,7 +381,6 @@
 <body>
     <header class="header">
         <img src="logo.webp" alt="Logo" class="logo" width="80" height="120" fetchpriority="high">
-
         <nav class="nav">
             <ul class="menu_list">
                 <li id="home"><a href="index.html">Home</a></li>
@@ -440,12 +449,10 @@
                     memories.
                     With clear information and smart tools, we help users make the best decisions every day.</p>
             </section>
-
         </div>
 
         <section class="features">
             <h2 class="features_title">Why Any Weather?</h2>
-
             <div class="features_grid">
                 <div class="feature_card fade-in">
                     <div class="feature_icon">
@@ -491,8 +498,6 @@
         <div><b>96%</b><span>% Accuracy</span></div>
     </section>
 
-
-
     <section class="testimonials fade-in">
         <h2>Testimonials</h2>
 
@@ -513,9 +518,6 @@
             </div>
         </div>
     </section>
-
-
-
 
 
     <div class="last_menu">
