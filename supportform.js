@@ -1,3 +1,11 @@
+const hamburger = document.querySelector(".hamburger");
+const header = document.querySelector(".menu_list");
+
+hamburger.addEventListener("click", function () {
+    header.classList.toggle("active");
+    document.body.classList.toggle("menu_open")
+});
+
 const form = document.getElementById('supportForm');
 
 form.addEventListener('submit', function(e) {
