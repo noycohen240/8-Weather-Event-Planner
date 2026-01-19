@@ -416,6 +416,7 @@ body.menu_open {
 
 .card-link h3 {
     text-decoration: none !important;
+    font-size: 1.2rem;
     color: #184f31 !important;
 }
 
