@@ -72,25 +72,25 @@ body.menu_open {
 .moto {
     width: 100%;
     overflow: hidden;
-    background: linear-gradient(180deg,#3A7CA5 0%, #3F88B3 100%);
+    background: linear-gradient(180deg, #3A7CA5 0%, #3F88B3 100%);
     border-color: #1F3C88;
     border-radius: 3px;
     padding: 15px 0;
     margin: 0;
     position: relative;
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 
 .our_moto {
     display: inline-block;
-    width: max-content; 
-    animation: slide 30s linear infinite; 
+    width: max-content;
+    animation: slide 30s linear infinite;
 }
 
 .moto_content {
     display: inline-flex;
     gap: 100px;
-    padding-right: 100px; 
+    padding-right: 100px;
 }
 
 .the_moto {
@@ -103,6 +103,7 @@ body.menu_open {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-50%);
     }
@@ -243,80 +244,106 @@ body.menu_open {
         padding: 0;
         display: none;
         z-index: 1000;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);}}
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .menu_list.active {
+        display: flex;
+    }
+
+    .menu_list li {
+        width: 100%;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .menu_list a {
+        display: block;
+        width: 100%;
+        padding: 15px 20px;
+        text-align: left;
+        color: #1e3a8a;
+        font-weight: 600;
+        box-sizing: border-box;
+    }
+
+    .menu_list a:hover {
+        background-color: #f1f5f9;
+    }
+}
 
 
 .content-box {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 25px;
-  margin: 20px auto;
-  max-width: 800px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 
 .accessibility-section h2,
 .support-section h2 {
-  text-align: center;
+    text-align: center;
 }
 
 
 .contact-form .form-group {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .contact-form label {
-  display: block;
-  margin-bottom: 5px;
+    display: block;
+    margin-bottom: 5px;
 }
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 
 .form-buttons {
-  display: flex; 
-  gap: 10px;     
+    display: flex;
+    gap: 10px;
 }
 
 
 .submit-button,
 .clear-button {
-  flex: 1; 
-  padding: 12px;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
+    flex: 1;
+    padding: 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 
 .submit-button {
-  background-color: #007bff;
-  color: white;
+    background-color: #007bff;
+    color: white;
 }
 
 .submit-button:hover {
-  background-color: #0056b3;
+    background-color: #0056b3;
 }
 
 
 .clear-button {
-  background-color: #e9ecef; 
-  color: #495057;
-  border: 1px solid #ced4da;
+    background-color: #e9ecef;
+    color: #495057;
+    border: 1px solid #ced4da;
 }
 
 .clear-button:hover {
-  background-color: #dae0e5;
+    background-color: #dae0e5;
 }
