@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Any Weather</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" media="print"
+        onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    </noscript>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="#main_home" class="skip_link">Skip to main content</a>
+    <header class="header">
+        <img src="logo.webp" alt="Logo" class="logo" width="80" height="120" fetchpriority="high">
+        <nav class="nav">
+            <ul class="menu_list">
+                <li id="home"><a href="index.html">Home</a></li>
+                <li id="activities"><a href="">Activities</a></li>
+                <li id="about_us"><a href="">About Us</a></li>
+                <li id="support_accessibility"><a href="">Support & Accessibility</a></li>
+            </ul>
+        </nav>
+
+        <div class="actions">
+            <div class="hamburger">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <div class="moto">
+        <div class="our_moto">
+            <div class="moto_content">
+                <div class="the_moto">No Matter The Weather.</div>
+                <div class="the_moto">No Matter The Weather.</div>
+                <div class="the_moto">No Matter The Weather.</div>
+                <div class="the_moto">No Matter The Weather.</div>
+                <div class="the_moto">No Matter The Weather.</div>
+                <div class="the_moto">No Matter The Weather.</div>
+            </div>
+
+            <div class="moto_content">
+                <div class="the_moto">No Matter The Weather.</div>
+                <div class="the_moto">No Matter The Weather.</div>
+                <div class="the_moto">No Matter The Weather.</div>
+                <div class="the_moto">No Matter The Weather.</div>
+                <div class="the_moto">No Matter The Weather.</div>
+                <div class="the_moto">No Matter The Weather.</div>
+            </div>
+        </div>
+    </div>
+    <main id="main_home">
+        <div class="weather_forecast">
+            <div class="cloud_layer">
+                <div class="cloud_small" style="top: 10%; animation-duration: 40s;"></div>
+                <div class="cloud_medium" style="top: 30%; animation-duration: 60s;"></div>
+                <div class="cloud_large" style="top: 50%; animation-duration: 80s;"></div>
+                <div class="cloud_medium" style="top: 70%; animation-duration: 90s;"></div>
+                <div class="cloud_small" style="top: 85%; animation-duration: 80s;"></div>
+            </div>
+            <h1 class="forecast_title">Weekly Weather Forecast</h1>
+            <div class="ol_forecast">
+                <div class="days_Container">
+                    <div class="sunday">
+                        <span class="days">Sunday</span>
+                        <div class="sunday_forecast">
+                            <span class="material-symbols-outlined" aria-hidden="true">
+                                clear_day
+                            </span>
+                        </div>
+                        <div class="type_day">Sunny</div>
+                        <div class="temp"> 25°-27°</div>
+                    </div>
+                    <div class="monday">
+                        <span class="days">Monday</span>
+                        <div class="monday_forecast">
+                            <span class="material-symbols-outlined" aria-hidden="true">
+                                partly_cloudy_day
+                            </span>
+                        </div>
+                        <div class="type_day">Partly Cloudy</div>
+                        <div class="temp">23°-26°</div>
+                    </div>
+                    <div class="tuesday">
+                        <span class="days">Tuesday</span>
+                        <div class="tuesday_forecast"><span class="material-symbols-outlined" aria-hidden="true">
+                                partly_cloudy_day
+                            </span></div>
+                        <div class="type_day">Partly Cloudy</div>
+                        <div class="temp">21°-24°</div>
+                    </div>
+                    <div class="wednesday">
+                        <span class="days">Wednesday</span>
+                        <div class="wednesday_forecast"><span class="material-symbols-outlined" aria-hidden="true">
+                                cloud
+                            </span></div>
+                        <div class="type_day">Cloudy</div>
+                        <div class="temp">17°-22°</div>
+                    </div>
+                    <div class="thursday">
+                        <span class="days">Thursday</span>
+                        <div class="thursday_forecast"><span class="material-symbols-outlined" aria-hidden="true">
+                                rainy
+                            </span></div>
+                        <div class="type_day">Rainy</div>
+                        <div class="temp"> 14°-18°</div>
+                    </div>
+                    <div class="friday">
+                        <span class="days">Friday</span>
+                        <div class="friday_forecast"><span class="material-symbols-outlined" aria-hidden="true">
+                                rainy
+                            </span></div>
+                        <div class="type_day">Rainy</div>
+                        <div class="temp">13°-16°</div>
+                    </div>
+                    <div class="saturday">
+                        <div class="days">Saturday</div>
+                        <div class="saturday_forecast"><span class="material-symbols-outlined" aria-hidden="true">
+                                cloud
+                            </span></div>
+                        <div class="type_day">Cloudy</div>
+                        <div class="temp">16°-20°</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="more_information">
+            <h2>Top Three Activities For You</h2>
+            <div class="recommended_activities">
+                <div class="recommend"><img src="strawberries.webp" alt="Strawberry picking activity suitable for winter weather and family outings" width="190" height="110"
+                        loading="lazy">
+                    <h3>Picking Strawberries</h3>
+                    <div>Available only in winter</div>
+                    <p>A lovely place, you can pick strawberries and eat them. This activity is <em><strong> suitable
+                                for
+                                everyone</strong></em>. </p>
+                </div>
+                <div class="recommend"><img src="riding.webp" alt="Outdoor horse riding activity suitable for sunny weather for couples and families" width="190" height="110"
+                        loading="lazy">
+                    <h3>Horse Riding</h3>
+                    <div>Suitable for a sunny day</div>
+                    <p>Relaxing horseback riding, <em><strong>suitable for couples and families</strong></em>.</p>
+                </div>
+                <div class="recommend"><img src="mall.webp" alt="Shopping activities in indoor malls for any weather" width="190" height="110"
+                        loading="lazy">
+                    <h3>Shopping</h3>
+                    <div>Suitable for all weather</div>
+                    <p>Shopping center and malls nationwide are always available for you.<em><strong> Suitable for
+                                everyone</strong></em>.</p>
+                </div>
+            </div>
+            <a href="" class="activities_link"> View All Activities →</a>
+        </div>
+    </main>
+
+    <footer class="last_menu">
+        <div class="the_last_list">
+            <h3 class="end_title">More On The Website</h3>
+            <ul class="last_menu_list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Activities</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Support & Accessibility</a></li>
+            </ul>
+            <div class="our_footer">
+                <small>&copy;Any Weather</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
