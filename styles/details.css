@@ -269,8 +269,6 @@ body.menu_open {
 }
 
 
-
-
 .activities-container {
     display: flex;
     flex-wrap: wrap; 
@@ -307,7 +305,6 @@ body.menu_open {
 }
 
 
-
 .activity-card h2 {
     font-family: 'Raleway', sans-serif;
     text-align: center;
@@ -339,16 +336,17 @@ body.menu_open {
     text-align: center;
     margin-top: 20px;
     padding: 10px 15px;
-    background-color: #c62828;
+    background-color: #27794f;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
     transition: background-color 0.3s;
 }
 
 .activity-card .more-info-link:hover {
-    background-color: #c9302c;
+    background-color: #1f6a42;
 }
 
 
@@ -382,7 +380,7 @@ body.menu_open {
     background-color: #27794f;
     color: white;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 20px;
     font-size: 0.9em;
     font-weight: bold;
     transition: background-color 0.3s;

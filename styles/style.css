@@ -461,6 +461,11 @@ body.menu_open {
     margin: 50px auto;
 }
 
+.strawberries_bottom{
+    text-decoration: none;
+    color: black;
+}
+
 .more_information h2 {
     text-align: center;
     margin-bottom: 20px;

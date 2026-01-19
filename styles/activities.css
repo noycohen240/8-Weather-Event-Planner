@@ -276,11 +276,8 @@ body.menu_open {
     width: 100%;
     display: flex;
     justify-content: center;
-    /* ממרכז אופקית */
     align-items: center;
-    /* ממרכז אנכית */
     margin: 50px 0;
-    /* מרווח גדול מהמוטו ומהכרטיסיות */
 }
 
 .filter-group {
@@ -294,8 +291,9 @@ body.menu_open {
 
 .filter-label {
     font-size: 1.5rem;
-    color: #1e3a8a;
+    color: #4f9c6b;
     font-weight: bold;
+    font-size: 28px;
     text-align: center;
 }
 
@@ -396,7 +394,7 @@ body.menu_open {
 .card-info h3 {
     margin: 0;
     font-size: 1.25rem;
-    color: #4f9c6b;
+    color: #184f31;
     min-height: 1.5rem;
     display: flex;
     align-items: center;
@@ -406,8 +404,8 @@ body.menu_open {
 
 .card-info p {
     margin: 0;
-    font-size: 1.15rem;
-    color: #475569;
+    font-size: 1rem;
+    color: black;
 }
 
 .card-link {
@@ -418,12 +416,12 @@ body.menu_open {
 
 .card-link h3 {
     text-decoration: none !important;
-    color: #4f9c6b !important;
+    color: #184f31 !important;
 }
 
 .card-link p {
     text-decoration: none !important;
-    color: #475569 !important;
+    color: black !important;
 }
 
 
