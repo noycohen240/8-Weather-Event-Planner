@@ -35,7 +35,7 @@ rainy conditions.
 - Expand activity selection based on different regions in Israel
 
 ## Live Website
-
+https://noycohen240.github.io/8-Weather-Event-Planner/
 
 ## GitHub Repository
 https://github.com/noycohen240/8-Weather-Event-Planner.git
