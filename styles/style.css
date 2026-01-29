@@ -573,9 +573,8 @@ body.menu_open {
     .more_information {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
         align-items: center;
-        width: 90%;
+        width: 100%;
         height: auto;
         margin: 3px auto;
         margin-top: 50px;
@@ -594,19 +593,17 @@ body.menu_open {
         display: flex;
         flex-direction: column;
         justify-items: center;
-        margin-right: 3px;
-        margin-left: 15px;
         gap: 20px;
     }
 
     .recommend {
-        width: 250px;
-        height: 300px;
+        width: 80%;
+        max-width: 320px;
+        height: auto;
         font-size: 0.9rem;
-        margin: 5px;
+        margin: 20px auto;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
         align-items: center;
     }
 
